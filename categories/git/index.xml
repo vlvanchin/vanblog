@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Van&#39;s Blog</title>
-    <link>vanrepo/categories/git/</link>
+    <link>./categories/git/</link>
     <description>Recent content in git on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="vanrepo/categories/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./categories/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on GIT</title>
-      <link>vanrepo/gittips/</link>
+      <link>./gittips/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>vanrepo/gittips/</guid>
+      <guid>./gittips/</guid>
       <description>Delete branch locally and remotely: // to delete a local branch $ git branch --delete &amp;lt;&amp;lt;local_branch&amp;gt;&amp;gt; or $ git branch -d &amp;lt;&amp;lt;local_branch&amp;gt;&amp;gt; // To delete a local un-merged branch $ git branch -D &amp;lt;&amp;lt;local_branch&amp;gt;&amp;gt; // to delete a local remote - tracking branch $ git branch --dr &amp;lt;&amp;lt;remote&amp;gt;&amp;gt;/&amp;lt;&amp;lt;branch-name&amp;gt;&amp;gt; // to delete a remote branch $ git push --delete &amp;lt;&amp;lt;remote&amp;gt;&amp;gt; &amp;lt;&amp;lt;branch-name&amp;gt;&amp;gt; Cherry-pick commits: * find the common parent as the inital state * $ git checkout -b &amp;lt;&amp;lt;cherry-pick-branch-name&amp;gt;&amp;gt; &amp;lt;&amp;lt;initial-commit-id&amp;gt;&amp;gt; // create a new branch for cherry-pick * $ git cherry-pick &amp;lt;&amp;lt;commit-id-wanted&amp;gt;&amp;gt; // select the commit that you want * Fix any conflicts that arrise ** $ git cherry-pick --continue // to proceed on cherry-pick * git push &amp;lt;&amp;lt;remote&amp;gt;&amp;gt; &amp;lt;&amp;lt;cherry-pick-branch-name&amp;gt;&amp;gt; Other useful commands: how to view logs for a specific branch $ git log --oneline --decorate &amp;lt;branch&amp;gt; to show all the names of the files committed in this commit $ git show --name-only &amp;lt;commit-id&amp;gt; to list the last 5 logs of a specific file $ git log -5 --follow &amp;lt;file-path&amp;gt; to checkout a specific commit of a specific file $ git checkout &amp;lt;commit-id&amp;gt; -- &amp;lt;file-path&amp;gt; reset a file from staged to work area $ git reset HEAD &amp;lt;file-path&amp;gt; to show differences of a staged file $ git diff --cached &amp;lt;file-path&amp;gt; to show differences of a file within an old and new commits $ git diff &amp;lt;old-commit-id&amp;gt; &amp;lt;new-commit-id&amp;gt; &amp;lt;file-path&amp;gt; to stash modified files except the staged $ git stash save --keep-index to add a file based on individual changes in that file, interactive mode $ git add --patch &amp;lt;file-path&amp;gt; How to reset last commit in local and remote: * reset head softly locally first $ git reset HEAD~1 * push forcefully to remote repo $ git push &amp;lt;&amp;lt;remote&amp;gt;&amp;gt; &amp;lt;&amp;lt;branch&amp;gt;&amp;gt; -f How to list all different commits between two Branches in a Repo # To list right-only branch commits that are not in the develop (left branch) $ git log --cherry-pick --right-only --no-merges develop.</description>
     </item>
     

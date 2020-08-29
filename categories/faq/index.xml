@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>faq on Van&#39;s Blog</title>
-    <link>vanrepo/categories/faq/</link>
+    <link>./categories/faq/</link>
     <description>Recent content in faq on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 22 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="vanrepo/categories/faq/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./categories/faq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FAQs</title>
-      <link>vanrepo/faq/</link>
+      <link>./faq/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>vanrepo/faq/</guid>
+      <guid>./faq/</guid>
       <description>How to fix the miss commits between the two branches in two separate repositories? Steps to be done to fix the miss commits between the two branches say the development branch in origin and upstream remotes.
  Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
  $ git checkout -b commonCommitBranch 2449134b726f723fa  update both the remotes</description>

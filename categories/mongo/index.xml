@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongo on Van&#39;s Blog</title>
-    <link>vanrepo/categories/mongo/</link>
+    <link>./categories/mongo/</link>
     <description>Recent content in Mongo on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="vanrepo/categories/mongo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./categories/mongo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on Mongo</title>
-      <link>vanrepo/mongod/</link>
+      <link>./mongod/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>vanrepo/mongod/</guid>
+      <guid>./mongod/</guid>
       <description>to run mongo demon with specified config file $ sudo mongod --config /etc/mongod.conf type mongo to enter the shell for mongod $ mongo to shutdown the mongod server $ sudo mongod --shutdown </description>
     </item>
     
