@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>k8s on My blog</title>
-    <link>/tags/k8s/</link>
-    <description>Recent content in k8s on My blog</description>
+    <title>k8s on Van&#39;s Blog</title>
+    <link>vanrepo/tags/k8s/</link>
+    <description>Recent content in k8s on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="vanrepo/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on K8s</title>
-      <link>/k8stips/</link>
+      <link>vanrepo/k8stips/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/k8stips/</guid>
+      <guid>vanrepo/k8stips/</guid>
       <description>Kubernetes Tips: Selfhelp page to test and learn about Kubernetes.
 Install kubectl that CLI to access and control cluster.  On Ubuntu   $ sudo snap install kubectl --classic To test kubectl try the following  $ kubectl version the output would be as follows:
 Client Version: version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;11&amp;quot;, GitVersion:&amp;quot;v1.11.0&amp;quot;, GitCommit:&amp;quot;91e7b4fd3c980becec37ceefe&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2018-06-27T20:17:28Z&amp;quot;, GoVersion:&amp;quot;go1.10.2&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} The connection to the server localhost:8080 was refused - did you specify the right host or port?</description>

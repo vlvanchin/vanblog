@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on My blog</title>
-    <link>/tags/linux/</link>
-    <description>Recent content in linux on My blog</description>
+    <title>linux on Van&#39;s Blog</title>
+    <link>vanrepo/tags/linux/</link>
+    <description>Recent content in linux on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 09 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="vanrepo/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on Linux</title>
-      <link>/shelltips/</link>
+      <link>vanrepo/shelltips/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/shelltips/</guid>
+      <guid>vanrepo/shelltips/</guid>
       <description>Some commands that benifit you How to search text in folder and sub-folders // to search &amp;ldquo;httpclient&amp;rdquo; text in current and subfolders // -r is recursive and -l to list the file along with path.
 $ grep -rl &amp;quot;httpclient&amp;quot; ./ </description>
     </item>

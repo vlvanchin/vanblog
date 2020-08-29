@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>swarm on My blog</title>
-    <link>/categories/swarm/</link>
-    <description>Recent content in swarm on My blog</description>
+    <title>swarm on Van&#39;s Blog</title>
+    <link>vanrepo/categories/swarm/</link>
+    <description>Recent content in swarm on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/swarm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="vanrepo/categories/swarm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on Docker Swarm</title>
-      <link>/dockerswarmtips/</link>
+      <link>vanrepo/dockerswarmtips/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/dockerswarmtips/</guid>
+      <guid>vanrepo/dockerswarmtips/</guid>
       <description>Docker Swarm to initialize Swarm $ docker swarm init how to deploy a stack of docker services // this accepts docker-compose format file for configurations
 $ docker stack deploy ex: $ docker stack deploy --compose-file docker-stack.yml vote // how to verify the stack has been deployed.
 $ docker stack services vote The above command&amp;rsquo;s output might be as follows:
