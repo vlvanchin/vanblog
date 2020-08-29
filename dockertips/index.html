@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tips on Docker &middot; </title>
+        <meta name="description" content="This page show some of the most used commands in Docker">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Tips on Docker">
+<meta property="og:description" content="This page show some of the most used commands in Docker">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/dockertips/">
+        <link rel="stylesheet" href="/dist/site.css">
+        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="My blog" href="/">My blog</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/XXX" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/XXX" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:XXX@example.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="FAQs" href="/faq/">FAQs</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Docker" href="/dockertips/">Tips on Docker</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Docker Swarm" href="/dockerswarmtips/">Tips on Docker Swarm</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on GIT" href="/gittips/">Tips on GIT</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Java" href="/javatips/">Tips on Java</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on K8s" href="/k8stips/">Tips on K8s</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Linux" href="/shelltips/">Tips on Linux</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Mongo" href="/mongod/">Tips on Mongo</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Webservice" href="/webservicetips/">Tips on Webservice</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Tips on Docker</h1>
+    
+        <p class="post-description" itemprop="description">This page show some of the most used commands in Docker</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-04-04" itemprop="datePublished">Sat, Apr 4, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="docker-commands">Docker Commands:</h1>
+<h2 id="here-are-a-few-basic-commands-used-in-docker">Here are a few basic commands used in Docker</h2>
+<p>// To pull a image &lsquo;alpine&rsquo; from docker registry.  note to be logged in DockerHub site.</p>
+<pre><code>$ docker pull alpine
+</code></pre><p>// run docker container and execute &lsquo;ls -l&rsquo; command</p>
+<pre><code>$ docker run alpine ls -l
+</code></pre><p>// view all docker containers</p>
+<pre><code>$ docker ps -a
+</code></pre><p>// view all docker containers currently running</p>
+<pre><code>$ docker ps
+</code></pre><p>The above command gives the following:</p>
+<pre><code>CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS               NAMES
+
+55bb9c2b8530        dockersamples/static-site   &quot;/bin/sh -c 'cd /u...&quot;   2 minutes ago       Up 2 minutes        80/tcp, 443/tcp     vigorous_swirles
+</code></pre><p>// how to execute &lsquo;echo &ldquo;hello from alpine&rdquo;&rsquo; command</p>
+<pre><code>$ docker run alpine echo &quot;hello from alpine&quot;
+</code></pre><p>// run docker container and hook up to its shell console, using -it option &lsquo;interactive terminal&rsquo;</p>
+<pre><code>$ docker run -it alpine /bin/sh
+</code></pre><h2 id="here-is-how-to-start-a-static-website-as-container">Here is how to start a static website as container</h2>
+<p>// Run a static website in a container. this command uses -d option to run with detached mode
+// run does the pull from DockerHub if the image is not locally found.</p>
+<pre><code>$ docker run -d dockersamples/static-site
+</code></pre><p>// to get the details of running contatier</p>
+<pre><code>$ docker inspect &lt;&lt;container_id&gt;&gt;
+ex: $ docker inspect 55bb9c2b85305b5674a37098a68f5cb7459f16ff505d332ad48b52a2a398508d
+</code></pre><p>// to stop the container by name</p>
+<pre><code>$ docker stop &lt;&lt;container_name&gt;&gt;
+ex: $ docker stop vigorous_swirles
+</code></pre><p>// To stop the container by container ID</p>
+<pre><code>$ docker stop &lt;&lt;container_id&gt;&gt;
+ex: $ docker stop  55bb9c2b8530
+</code></pre><p>// to start a stopped container by name</p>
+<pre><code>$ docker start &lt;&lt;container_name&gt;&gt;
+ex: docker start vigorous_swirles
+</code></pre><p>// to remove a stopped container</p>
+<pre><code>$ docker rm &lt;&lt;container_name&gt;&gt;
+ex: $ docker rm vigorous_swirles
+</code></pre><h2 id="how-to-give-a-name-to-assign-default-ports-and-pass-environment-variables-to-a-container">How to give a name, to assign default ports and pass environment variables to a container?</h2>
+<p>// To run a named container in detached mode and passing environment variable for &lsquo;AUTHOR&rsquo; and accessed through default ports.</p>
+<pre><code>$ docker run --name &quot;static-site&quot; -d -P -e AUTHOR=&quot;Van&quot; dockersamples/static-site
+</code></pre><p>// to see in which ports the container is using</p>
+<pre><code>$ docker port &lt;&lt;container_name&gt;&gt;
+ex: $ docker port static-site
+</code></pre><p>// to make a container run in specific ports: host uses 8888, continer uses 80
+// goto browser and enter with localhost &ndash;&gt; http://localhost:8888
+// if container&rsquo;s IP is 172.17.0.3 , then in browser &ndash;&gt; http://172.17.0.3:80
+// this will display the site.</p>
+<pre><code>$ docker run --name &quot;site-2&quot; -d -p 8888:80 -e AUTHOR=&quot;bagsub&quot; dockersamples/static-site
+</code></pre><h2 id="to-remove">To Remove</h2>
+<p>// to force remove : stop and remove the container</p>
+<pre><code>$ docker rm -f &lt;&lt;container_name&gt;&gt;
+
+ex: docker rm -f site-2
+</code></pre><h2 id="to-list-containers">To List containers</h2>
+<p>// to list all docker images found locally</p>
+<pre><code>$ docker images
+</code></pre><p>// to list all docker images that starts with &lsquo;v&rsquo; character</p>
+<pre><code>$ docker images &quot;v*&quot;
+</code></pre><h2 id="to-pull-and-search-images">To pull and search images</h2>
+<p>// To pull an image Ubuntu with a tag version 12.04
+// if tag version not specified then &lsquo;latest&rsquo; tag value is used</p>
+<pre><code>$ docker pull ubuntu:12.04
+</code></pre><p>// to search a python container, both locally and remote
+// you will have details about all the containers available</p>
+<pre><code>$ docker search python
+</code></pre><h2 id="how-to-create-push-and-run-your-own-image-as-a-container">How to Create, Push and Run your own Image as a container?</h2>
+<p>Please refer to the <a href="https://vanchin.blogspot.sg/2018/03/how-to-create-push-and-run-your-own.html"> link </a></p>
+<h2 id="how-to-run-a-specific-command-in-the-docker-container">How to run a specific command in the docker container?</h2>
+<p>This command shows how to override the entry point defined in the image. This command would override the default entry point configured in the Dockerfile with &ldquo;bin/ls&rdquo; and the parameters to this command follows after the image name.</p>
+<pre><code>$ docker run --entrypoint /bin/ls  vlvanchin/general -ls /
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/docker/">docker</a>, 
+            
+                <a href="/tags/development/">development</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Tips%20on%20Docker&url=%2fdockertips%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fdockertips%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fdockertips%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="My blog" href="/">My blog</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
+

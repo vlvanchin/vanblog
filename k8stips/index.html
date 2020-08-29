@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tips on K8s &middot; </title>
+        <meta name="description" content="This page show some of the most used commands in Kubernetes">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Tips on K8s">
+<meta property="og:description" content="This page show some of the most used commands in Kubernetes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/k8stips/">
+        <link rel="stylesheet" href="/dist/site.css">
+        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="My blog" href="/">My blog</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/XXX" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/XXX" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:XXX@example.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="FAQs" href="/faq/">FAQs</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Docker" href="/dockertips/">Tips on Docker</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Docker Swarm" href="/dockerswarmtips/">Tips on Docker Swarm</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on GIT" href="/gittips/">Tips on GIT</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Java" href="/javatips/">Tips on Java</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on K8s" href="/k8stips/">Tips on K8s</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Linux" href="/shelltips/">Tips on Linux</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Mongo" href="/mongod/">Tips on Mongo</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Webservice" href="/webservicetips/">Tips on Webservice</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Tips on K8s</h1>
+    
+        <p class="post-description" itemprop="description">This page show some of the most used commands in Kubernetes</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-06-02" itemprop="datePublished">Tue, Jun 2, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h2 id="kubernetes-tips">Kubernetes Tips:</h2>
+<p>Selfhelp page to test and learn about Kubernetes.</p>
+<h1 id="install-kubectl-that-cli-to-access-and-control-cluster">Install <em>kubectl</em> that CLI to access and control cluster.</h1>
+<ul>
+<li>On Ubuntu</li>
+</ul>
+<pre><code> $ sudo snap install kubectl --classic
+</code></pre><h2 id="to-test-kubectl-try-the-following">To test <em>kubectl</em> try the following</h2>
+<pre><code> $ kubectl version
+</code></pre><p>the output would be as follows:</p>
+<pre><code>Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;11&quot;, GitVersion:&quot;v1.11.0&quot;, GitCommit:&quot;91e7b4fd3c980becec37ceefe&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-06-27T20:17:28Z&quot;, GoVersion:&quot;go1.10.2&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+</code></pre><p>If your output is like above then it means that there is no cluster up and running. To fix this problem., install MiniKube. Please follow the next steps</p>
+<h1 id="install-minikube-in-ubuntu">Install <em>MiniKube</em> in Ubuntu</h1>
+<ul>
+<li>
+<p>Please refer to the link below for more information on MiniKube
+<a href="https://github.com/kubernetes/minikube">https://github.com/kubernetes/minikube</a></p>
+</li>
+<li>
+<p>to get the latest of the MiniKube binary</p>
+</li>
+</ul>
+<pre><code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+</code></pre><ul>
+<li>to put minikube as executable</li>
+</ul>
+<pre><code>$ chmod +x minikube
+</code></pre><ul>
+<li>to put <em>minikube</em> in your path</li>
+</ul>
+<pre><code>$ sudo mv minikube /usr/local/bin/
+</code></pre><h1 id="is-minikube-installed">Is MiniKube installed?</h1>
+<ul>
+<li>To test if minikube is install and running</li>
+</ul>
+<pre><code>$ minikube Version
+</code></pre><ul>
+<li>Still you would not be able to have the <em>kubectl version</em> working, as the cluster is not up yet.</li>
+</ul>
+<h1 id="how-to-start-minikube-cluster">How to start Minikube cluster?</h1>
+<ul>
+<li>To start a cluster through the <em>minikube</em> we need to have KVM or VM installed. But if we want to run the cluster without any vm-driver for testing purpose, we can do as follows.</li>
+</ul>
+<pre><code>$ minikube start --vm-driver=none
+</code></pre><p>&ndash; if the above command throws any permission error then try the above code in <em>sudo</em></p>
+<pre><code>WARNING: IT IS RECOMMENDED NOT TO RUN THE NONE DRIVER ON PERSONAL WORKSTATIONS
+	The 'none' driver will run an insecure kubernetes apiserver as root that may leave the host vulnerable to CSRF attacks
+
+When using the none driver, the kubectl config and credentials generated will be root owned and will appear in the root home directory.
+You will need to move the files to the appropriate location and then set the correct permissions.  An example of this is below:
+
+	sudo mv /root/.kube $HOME/.kube # this will write over any previous configuration
+	sudo chown -R $USER $HOME/.kube
+	sudo chgrp -R $USER $HOME/.kube
+
+	sudo mv /root/.minikube $HOME/.minikube # this will write over any previous configuration
+	sudo chown -R $USER $HOME/.minikube
+	sudo chgrp -R $USER $HOME/.minikube
+
+This can also be done automatically by setting the env var CHANGE_MINIKUBE_NONE_USER=true
+</code></pre><ul>
+<li>Now run the following <em>kubectl version</em>, it will get the clint and server configuration.</li>
+</ul>
+<pre><code>Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;11&quot;, GitVersion:&quot;v1.11.0&quot;, GitCommit:&quot;91e7b4fd31fcd3dcec37ceefe&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-06-27T20:17:28Z&quot;, GoVersion:&quot;go1.10.2&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+Server Version: version.Info{Major:&quot;1&quot;, Minor:&quot;10&quot;, GitVersion:&quot;v1.10.0&quot;, GitCommit:&quot;fc32d2f3698e36e9f0eaead&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-03-26T16:44:10Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+</code></pre><h1 id="how-to-stop-the-cluster">How to stop the cluster?</h1>
+<ul>
+<li>Run the following command</li>
+</ul>
+<pre><code>$ sudo minikube stop
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/k8s/">k8s</a>, 
+            
+                <a href="/tags/development/">development</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Tips%20on%20K8s&url=%2fk8stips%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fk8stips%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fk8stips%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="My blog" href="/">My blog</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
+

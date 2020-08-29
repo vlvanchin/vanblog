@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tips on GIT &middot; </title>
+        <meta name="description" content="This page show some of the most used commands in GIT">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Tips on GIT">
+<meta property="og:description" content="This page show some of the most used commands in GIT">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/gittips/">
+        <link rel="stylesheet" href="/dist/site.css">
+        <link rel="stylesheet" href="/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="My blog" href="/">My blog</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/XXX" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/XXX" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:XXX@example.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Contact" href="/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="FAQs" href="/faq/">FAQs</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Docker" href="/dockertips/">Tips on Docker</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Docker Swarm" href="/dockerswarmtips/">Tips on Docker Swarm</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on GIT" href="/gittips/">Tips on GIT</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Java" href="/javatips/">Tips on Java</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on K8s" href="/k8stips/">Tips on K8s</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Linux" href="/shelltips/">Tips on Linux</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Mongo" href="/mongod/">Tips on Mongo</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tips on Webservice" href="/webservicetips/">Tips on Webservice</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Tips on GIT</h1>
+    
+        <p class="post-description" itemprop="description">This page show some of the most used commands in GIT</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-04-02" itemprop="datePublished">Thu, Apr 2, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="delete-branch-locally-and-remotely">Delete branch locally and remotely:</h1>
+<pre><code>// to delete a local branch
+$ git branch --delete &lt;&lt;local_branch&gt;&gt;
+or
+$ git branch -d &lt;&lt;local_branch&gt;&gt;
+
+// To delete a local un-merged branch
+$ git branch -D &lt;&lt;local_branch&gt;&gt;
+
+// to delete a local remote - tracking branch
+$ git branch --dr &lt;&lt;remote&gt;&gt;/&lt;&lt;branch-name&gt;&gt;
+
+// to delete a remote branch
+$ git push --delete &lt;&lt;remote&gt;&gt; &lt;&lt;branch-name&gt;&gt;
+</code></pre><h1 id="cherry-pick-commits">Cherry-pick commits:</h1>
+<pre><code>* find the common parent as the inital state
+* $ git checkout -b &lt;&lt;cherry-pick-branch-name&gt;&gt; &lt;&lt;initial-commit-id&gt;&gt; // create a new branch for cherry-pick
+* $ git cherry-pick &lt;&lt;commit-id-wanted&gt;&gt; // select the commit that you want
+* Fix any conflicts that arrise
+** $ git cherry-pick --continue // to proceed on cherry-pick
+* git push &lt;&lt;remote&gt;&gt; &lt;&lt;cherry-pick-branch-name&gt;&gt;
+</code></pre><h1 id="other-useful-commands">Other useful commands:</h1>
+<h3 id="how-to-view-logs-for-a-specific-branch">how to view logs for a specific branch</h3>
+<pre><code>$ git log --oneline --decorate &lt;branch&gt;
+</code></pre><h3 id="to-show-all-the-names-of-the-files-committed-in-this-commit">to show all the names of the files committed in this commit</h3>
+<pre><code>$ git show  --name-only &lt;commit-id&gt;
+</code></pre><h3 id="to-list-the-last-5-logs-of-a-specific-file">to list the last 5 logs of a specific file</h3>
+<pre><code>$ git log -5 --follow &lt;file-path&gt;
+</code></pre><h3 id="to-checkout-a-specific-commit-of-a-specific-file">to checkout a specific commit of a specific file</h3>
+<pre><code>$ git checkout &lt;commit-id&gt; -- &lt;file-path&gt;
+</code></pre><h3 id="reset-a-file-from-staged-to-work-area">reset a file from staged to work area</h3>
+<pre><code>$ git reset HEAD &lt;file-path&gt;
+</code></pre><h3 id="to-show-differences-of-a-staged-file">to show differences of a staged file</h3>
+<pre><code>$ git diff --cached &lt;file-path&gt;
+</code></pre><h3 id="to-show-differences-of-a-file-within-an-old-and-new-commits">to show differences of a file within an old and new commits</h3>
+<pre><code>$ git diff &lt;old-commit-id&gt; &lt;new-commit-id&gt; &lt;file-path&gt;
+</code></pre><h3 id="to-stash-modified-files-except-the-staged">to stash modified files except the staged</h3>
+<pre><code>$ git stash save --keep-index
+</code></pre><h3 id="to-add-a-file-based-on-individual-changes-in-that-file-interactive-mode">to add a file based on individual changes in that file, interactive mode</h3>
+<pre><code>$ git add --patch &lt;file-path&gt;
+</code></pre><h2 id="how-to-reset-last-commit-in-local-and-remote">How to reset last commit in local and remote:</h2>
+<pre><code>* reset head softly locally first
+$ git reset HEAD~1
+
+* push forcefully to remote repo
+$ git push &lt;&lt;remote&gt;&gt; &lt;&lt;branch&gt;&gt; -f
+</code></pre><h2 id="how-to-list-all-different-commits-between-two-branches-in-a-repo">How to list all different commits between two Branches in a Repo</h2>
+<pre><code># To list right-only branch commits that are not in the develop (left branch)
+$ git log --cherry-pick --right-only --no-merges develop...master 
+
+# To list left-only branch commits that are not in the master (right branch)
+$ git log --cherry-pick --left-only --no-merges develop...master
+</code></pre><h2 id="how-to-merge-a-tag-in-a-branch-to-another-branch">How to merge a Tag in a branch to another branch</h2>
+<pre><code># change dir to the destination branch
+$ git checkout &lt;&lt;destination_branch&gt;&gt;
+
+# fetch the tags from the remote
+$ git fetch --tags origin
+
+# do merge tag
+$ git merge &lt;&lt;tag_name&gt;&gt;
+</code></pre><h2 id="how-to-get-log-based-on-filters">How to get log based on filters</h2>
+<pre><code>// fetch commits based on commit messages
+git log --all --oneline --decorate --grep &quot;message&quot;
+
+// fetch commits based on author and commit message
+git log --oneline --author=&quot;authorName&quot; --grep &quot;messageStr&quot;
+
+// to display all the files for a specific commit id
+git show --name-only f2c06ff6
+
+// to display the commit contents of a file on a specific commit
+git show -p &lt;commit-id&gt; -- &lt;filename&gt;
+
+// to display all commit ids along with author name
+git log --format='%H %an'
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/tags/git/">git</a>, 
+            
+                <a href="/tags/development/">development</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Tips%20on%20GIT&url=%2fgittips%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fgittips%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fgittips%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="My blog" href="/">My blog</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
+
