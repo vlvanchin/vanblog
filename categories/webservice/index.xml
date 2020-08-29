@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>webservice on Van&#39;s Blog</title>
-    <link>/vanrepo/categories/webservice/</link>
+    <link>/vanblog/categories/webservice/</link>
     <description>Recent content in webservice on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/vanrepo/categories/webservice/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vanblog/categories/webservice/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on Webservice</title>
-      <link>/vanrepo/webservicetips/</link>
+      <link>/vanblog/webservicetips/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/webservicetips/</guid>
+      <guid>/vanblog/webservicetips/</guid>
       <description>jax-ws using soap and wsdl &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- &amp;gt; mkdir -p helloservice/endpoint/ &amp;gt; mkdir build &amp;gt; javac -d build helloservice/endpoint/*java &amp;gt; C:\dev\ides\eclipse\workspace\attachmentws&amp;gt;wsgen -d build -s build -cp c:\dev\ides\eclipse\workspace\attachmentws\build helloservice.endpoint.Hello &amp;gt; java -cp build helloservice.endpoint.Server This is to generated web service classes for the service and WSDL and XSD C:\dev\ides\eclipse\workspace\FileAttachmentExample&amp;gt;wsgen -d bin -s bin -wsdl -cp c:\dev\ides\eclipse\workspace\FileAttachmentExample\bin com.company.jira.services.ws.attach.server.FileTransferImpl This is to generate web service classes for the client based on the WSDL from the localhost wsimport -keep -p net.</description>
     </item>
     

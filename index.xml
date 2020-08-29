@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Van&#39;s Blog</title>
-    <link>/vanrepo/</link>
+    <link>/vanblog/</link>
     <description>Recent content on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/vanrepo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vanblog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on Webservice</title>
-      <link>/vanrepo/webservicetips/</link>
+      <link>/vanblog/webservicetips/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/webservicetips/</guid>
+      <guid>/vanblog/webservicetips/</guid>
       <description>jax-ws using soap and wsdl &amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- &amp;gt; mkdir -p helloservice/endpoint/ &amp;gt; mkdir build &amp;gt; javac -d build helloservice/endpoint/*java &amp;gt; C:\dev\ides\eclipse\workspace\attachmentws&amp;gt;wsgen -d build -s build -cp c:\dev\ides\eclipse\workspace\attachmentws\build helloservice.endpoint.Hello &amp;gt; java -cp build helloservice.endpoint.Server This is to generated web service classes for the service and WSDL and XSD C:\dev\ides\eclipse\workspace\FileAttachmentExample&amp;gt;wsgen -d bin -s bin -wsdl -cp c:\dev\ides\eclipse\workspace\FileAttachmentExample\bin com.company.jira.services.ws.attach.server.FileTransferImpl This is to generate web service classes for the client based on the WSDL from the localhost wsimport -keep -p net.</description>
     </item>
     
     <item>
       <title>Tips on Linux</title>
-      <link>/vanrepo/shelltips/</link>
+      <link>/vanblog/shelltips/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/shelltips/</guid>
+      <guid>/vanblog/shelltips/</guid>
       <description>Some commands that benifit you How to search text in folder and sub-folders // to search &amp;ldquo;httpclient&amp;rdquo; text in current and subfolders // -r is recursive and -l to list the file along with path.
 $ grep -rl &amp;quot;httpclient&amp;quot; ./ </description>
     </item>
     
     <item>
       <title>Tips on K8s</title>
-      <link>/vanrepo/k8stips/</link>
+      <link>/vanblog/k8stips/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/k8stips/</guid>
+      <guid>/vanblog/k8stips/</guid>
       <description>Kubernetes Tips: Selfhelp page to test and learn about Kubernetes.
 Install kubectl that CLI to access and control cluster.  On Ubuntu   $ sudo snap install kubectl --classic To test kubectl try the following  $ kubectl version the output would be as follows:
 Client Version: version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;11&amp;quot;, GitVersion:&amp;quot;v1.11.0&amp;quot;, GitCommit:&amp;quot;91e7b4fd3c980becec37ceefe&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2018-06-27T20:17:28Z&amp;quot;, GoVersion:&amp;quot;go1.10.2&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} The connection to the server localhost:8080 was refused - did you specify the right host or port?</description>
@@ -42,10 +42,10 @@ Client Version: version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;11&amp
     
     <item>
       <title>Tips on Java</title>
-      <link>/vanrepo/javatips/</link>
+      <link>/vanblog/javatips/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/javatips/</guid>
+      <guid>/vanblog/javatips/</guid>
       <description>How to run executable Java Jar files Here we have a sample1 project that shows how to build and execute java programs as a Jar file.
 ├─ com └── vlv ├── demosample └── GetProps.java Above tree structure show the java source and class objects in their package structure.
 Here is the sample code for GetProps.java
@@ -54,10 +54,10 @@ package com.vlv.demosample; import java.lang.*; import java.security.*; public c
     
     <item>
       <title>FAQs</title>
-      <link>/vanrepo/faq/</link>
+      <link>/vanblog/faq/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/faq/</guid>
+      <guid>/vanblog/faq/</guid>
       <description>How to fix the miss commits between the two branches in two separate repositories? Steps to be done to fix the miss commits between the two branches say the development branch in origin and upstream remotes.
  Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
  $ git checkout -b commonCommitBranch 2449134b726f723fa  update both the remotes</description>
@@ -65,10 +65,10 @@ package com.vlv.demosample; import java.lang.*; import java.security.*; public c
     
     <item>
       <title>Tips on Docker</title>
-      <link>/vanrepo/dockertips/</link>
+      <link>/vanblog/dockertips/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/dockertips/</guid>
+      <guid>/vanblog/dockertips/</guid>
       <description>Docker Commands: Here are a few basic commands used in Docker // To pull a image &amp;lsquo;alpine&amp;rsquo; from docker registry. note to be logged in DockerHub site.
 $ docker pull alpine // run docker container and execute &amp;lsquo;ls -l&amp;rsquo; command
 $ docker run alpine ls -l // view all docker containers
@@ -78,10 +78,10 @@ $ docker ps The above command gives the following:</description>
     
     <item>
       <title>Tips on Docker Swarm</title>
-      <link>/vanrepo/dockerswarmtips/</link>
+      <link>/vanblog/dockerswarmtips/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/dockerswarmtips/</guid>
+      <guid>/vanblog/dockerswarmtips/</guid>
       <description>Docker Swarm to initialize Swarm $ docker swarm init how to deploy a stack of docker services // this accepts docker-compose format file for configurations
 $ docker stack deploy ex: $ docker stack deploy --compose-file docker-stack.yml vote // how to verify the stack has been deployed.
 $ docker stack services vote The above command&amp;rsquo;s output might be as follows:
@@ -90,37 +90,37 @@ CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 645ec6c9391c dockersamples
     
     <item>
       <title>About</title>
-      <link>/vanrepo/page/about/</link>
+      <link>/vanblog/page/about/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0800</pubDate>
       
-      <guid>/vanrepo/page/about/</guid>
+      <guid>/vanblog/page/about/</guid>
       <description>Coming soon.</description>
     </item>
     
     <item>
       <title>Tips on GIT</title>
-      <link>/vanrepo/gittips/</link>
+      <link>/vanblog/gittips/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/gittips/</guid>
+      <guid>/vanblog/gittips/</guid>
       <description>Delete branch locally and remotely: // to delete a local branch $ git branch --delete &amp;lt;&amp;lt;local_branch&amp;gt;&amp;gt; or $ git branch -d &amp;lt;&amp;lt;local_branch&amp;gt;&amp;gt; // To delete a local un-merged branch $ git branch -D &amp;lt;&amp;lt;local_branch&amp;gt;&amp;gt; // to delete a local remote - tracking branch $ git branch --dr &amp;lt;&amp;lt;remote&amp;gt;&amp;gt;/&amp;lt;&amp;lt;branch-name&amp;gt;&amp;gt; // to delete a remote branch $ git push --delete &amp;lt;&amp;lt;remote&amp;gt;&amp;gt; &amp;lt;&amp;lt;branch-name&amp;gt;&amp;gt; Cherry-pick commits: * find the common parent as the inital state * $ git checkout -b &amp;lt;&amp;lt;cherry-pick-branch-name&amp;gt;&amp;gt; &amp;lt;&amp;lt;initial-commit-id&amp;gt;&amp;gt; // create a new branch for cherry-pick * $ git cherry-pick &amp;lt;&amp;lt;commit-id-wanted&amp;gt;&amp;gt; // select the commit that you want * Fix any conflicts that arrise ** $ git cherry-pick --continue // to proceed on cherry-pick * git push &amp;lt;&amp;lt;remote&amp;gt;&amp;gt; &amp;lt;&amp;lt;cherry-pick-branch-name&amp;gt;&amp;gt; Other useful commands: how to view logs for a specific branch $ git log --oneline --decorate &amp;lt;branch&amp;gt; to show all the names of the files committed in this commit $ git show --name-only &amp;lt;commit-id&amp;gt; to list the last 5 logs of a specific file $ git log -5 --follow &amp;lt;file-path&amp;gt; to checkout a specific commit of a specific file $ git checkout &amp;lt;commit-id&amp;gt; -- &amp;lt;file-path&amp;gt; reset a file from staged to work area $ git reset HEAD &amp;lt;file-path&amp;gt; to show differences of a staged file $ git diff --cached &amp;lt;file-path&amp;gt; to show differences of a file within an old and new commits $ git diff &amp;lt;old-commit-id&amp;gt; &amp;lt;new-commit-id&amp;gt; &amp;lt;file-path&amp;gt; to stash modified files except the staged $ git stash save --keep-index to add a file based on individual changes in that file, interactive mode $ git add --patch &amp;lt;file-path&amp;gt; How to reset last commit in local and remote: * reset head softly locally first $ git reset HEAD~1 * push forcefully to remote repo $ git push &amp;lt;&amp;lt;remote&amp;gt;&amp;gt; &amp;lt;&amp;lt;branch&amp;gt;&amp;gt; -f How to list all different commits between two Branches in a Repo # To list right-only branch commits that are not in the develop (left branch) $ git log --cherry-pick --right-only --no-merges develop.</description>
     </item>
     
     <item>
       <title>Tips on Mongo</title>
-      <link>/vanrepo/mongod/</link>
+      <link>/vanblog/mongod/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/vanrepo/mongod/</guid>
+      <guid>/vanblog/mongod/</guid>
       <description>to run mongo demon with specified config file $ sudo mongod --config /etc/mongod.conf type mongo to enter the shell for mongod $ mongo to shutdown the mongod server $ sudo mongod --shutdown </description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/vanrepo/page/contact/</link>
+      <link>/vanblog/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
       
-      <guid>/vanrepo/page/contact/</guid>
+      <guid>/vanblog/page/contact/</guid>
       <description>Contact Aenean ipsum justo, semper eu nisl ut, pretium tincidunt sem. Praesent et diam sit amet lacus lobortis dictum a id lacus. Quisque hendrerit sit amet turpis eu varius. Ut id lorem ac felis ultrices tincidunt. Pellentesque consequat arcu ac fringilla imperdiet. Phasellus pellentesque, sapien non pulvinar blandit, sapien ante aliquet felis, vel porttitor sapien ante in lacus. Fusce non urna aliquet, malesuada nibh vel, luctus urna. Phasellus ut lacus molestie, varius purus quis, malesuada lorem.</description>
     </item>
     
