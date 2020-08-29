@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on Van&#39;s Blog</title>
-    <link>./categories/docker/</link>
+    <link>/vanrepo/categories/docker/</link>
     <description>Recent content in docker on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="./categories/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vanrepo/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tips on Docker</title>
-      <link>./dockertips/</link>
+      <link>/vanrepo/dockertips/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>./dockertips/</guid>
+      <guid>/vanrepo/dockertips/</guid>
       <description>Docker Commands: Here are a few basic commands used in Docker // To pull a image &amp;lsquo;alpine&amp;rsquo; from docker registry. note to be logged in DockerHub site.
 $ docker pull alpine // run docker container and execute &amp;lsquo;ls -l&amp;rsquo; command
 $ docker run alpine ls -l // view all docker containers
@@ -25,10 +25,10 @@ $ docker ps The above command gives the following:</description>
     
     <item>
       <title>Tips on Docker Swarm</title>
-      <link>./dockerswarmtips/</link>
+      <link>/vanrepo/dockerswarmtips/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>./dockerswarmtips/</guid>
+      <guid>/vanrepo/dockerswarmtips/</guid>
       <description>Docker Swarm to initialize Swarm $ docker swarm init how to deploy a stack of docker services // this accepts docker-compose format file for configurations
 $ docker stack deploy ex: $ docker stack deploy --compose-file docker-stack.yml vote // how to verify the stack has been deployed.
 $ docker stack services vote The above command&amp;rsquo;s output might be as follows:

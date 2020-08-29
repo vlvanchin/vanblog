@@ -3,182 +3,182 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>./categories/</loc>
+    <loc>/vanrepo/categories/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/development/</loc>
+    <loc>/vanrepo/categories/development/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/development/</loc>
+    <loc>/vanrepo/tags/development/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./post/</loc>
+    <loc>/vanrepo/post/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/</loc>
+    <loc>/vanrepo/tags/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./webservicetips/</loc>
+    <loc>/vanrepo/webservicetips/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./</loc>
+    <loc>/vanrepo/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/webservice/</loc>
+    <loc>/vanrepo/tags/webservice/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/webservice/</loc>
+    <loc>/vanrepo/categories/webservice/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/linux/</loc>
+    <loc>/vanrepo/categories/linux/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/linux/</loc>
+    <loc>/vanrepo/tags/linux/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./shelltips/</loc>
+    <loc>/vanrepo/shelltips/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/k8s/</loc>
+    <loc>/vanrepo/tags/k8s/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/k8s/</loc>
+    <loc>/vanrepo/categories/k8s/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./k8stips/</loc>
+    <loc>/vanrepo/k8stips/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/java/</loc>
+    <loc>/vanrepo/tags/java/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/java/</loc>
+    <loc>/vanrepo/categories/java/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./javatips/</loc>
+    <loc>/vanrepo/javatips/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/faq/</loc>
+    <loc>/vanrepo/tags/faq/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/faq/</loc>
+    <loc>/vanrepo/categories/faq/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./faq/</loc>
+    <loc>/vanrepo/faq/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/docker/</loc>
+    <loc>/vanrepo/tags/docker/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/docker/</loc>
+    <loc>/vanrepo/categories/docker/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./dockertips/</loc>
+    <loc>/vanrepo/dockertips/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/swarm/</loc>
+    <loc>/vanrepo/tags/swarm/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/swarm/</loc>
+    <loc>/vanrepo/categories/swarm/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./dockerswarmtips/</loc>
+    <loc>/vanrepo/dockerswarmtips/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./page/about/</loc>
+    <loc>/vanrepo/page/about/</loc>
     <lastmod>2020-04-03T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>./page/</loc>
+    <loc>/vanrepo/page/</loc>
     <lastmod>2020-04-03T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/git/</loc>
+    <loc>/vanrepo/tags/git/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/git/</loc>
+    <loc>/vanrepo/categories/git/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./categories/mongo/</loc>
+    <loc>/vanrepo/categories/mongo/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/mongo/</loc>
+    <loc>/vanrepo/tags/mongo/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./gittips/</loc>
+    <loc>/vanrepo/gittips/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./mongod/</loc>
+    <loc>/vanrepo/mongod/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./page/contact/</loc>
+    <loc>/vanrepo/page/contact/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url>
   
