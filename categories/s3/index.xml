@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>s3 on Van&#39;s Blog</title>
+    <link>/vanblog/categories/s3/</link>
+    <description>Recent content in s3 on Van&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/vanblog/categories/s3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tips on AWS s3</title>
+      <link>/vanblog/aws-s3/</link>
+      <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/aws-s3/</guid>
+      <description>AWS S3 Tips This page gives some tips on how to manage the files and buckets in S3
+To list all the buckets (folders) To get help for s3 command
+$ aws s3 help Try to run the following
+$ aws s3 ls to list all the buckets using a specific profile
+$ aws s3 --profile ${profile_name} ls to list all the files in a specific bucket; say test_bucket
+$ aws s3 ls s3://test_bucket to list all the files in a specific bucket with a prefix get</description>
+    </item>
+    
+  </channel>
+</rss>

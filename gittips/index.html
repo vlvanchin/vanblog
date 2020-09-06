@@ -68,6 +68,10 @@
     </li>
 
     <li class="site-nav-item">
+        <a title="Tips on AWS s3" href="/vanblog/aws-s3/">Tips on AWS s3</a>
+    </li>
+
+    <li class="site-nav-item">
         <a title="Tips on Docker" href="/vanblog/dockertips/">Tips on Docker</a>
     </li>
 
@@ -180,15 +184,29 @@ $ git log --cherry-pick --right-only --no-merges develop...master
 
 # To list left-only branch commits that are not in the master (right branch)
 $ git log --cherry-pick --left-only --no-merges develop...master
+</code></pre><h2 id="basis-commands-for-tags">Basis commands for Tags</h2>
+<p>This shows command to list, create, push to remote, delete locally and in remote</p>
+<h3 id="to-list-all-tags">To list all tags</h3>
+<pre><code>$ git tag
+</code></pre><h3 id="to-create-a-tag-with-anotate-and-with-message">to create a tag with anotate and with message</h3>
+<pre><code>$ git tag -a ${tag_name} -m &quot;enter the message for this tag&quot;
+</code></pre><h3 id="to-push-a-tag-to-remote-repository">to push a tag to remote repository</h3>
+<pre><code>$ git push origin ${tag_name}
+</code></pre><h3 id="to-show-the-details-of-a-tag">to show the details of a tag</h3>
+<pre><code>$ git show ${tag_name}
+</code></pre><h3 id="to-deleteremove-a-tag">to delete/remove a tag</h3>
+<pre><code>$ git tag --delete ${tag_name}
+</code></pre><h3 id="to-deleteremove-a-tag-in-the-remote-repo">to delete/remove a tag in the remote repo</h3>
+<pre><code>$ git push origin --delete ${tag_name}
 </code></pre><h2 id="how-to-merge-a-tag-in-a-branch-to-another-branch">How to merge a Tag in a branch to another branch</h2>
 <pre><code># change dir to the destination branch
-$ git checkout &lt;&lt;destination_branch&gt;&gt;
+$ git checkout &lt;destination_branch&gt;
 
 # fetch the tags from the remote
 $ git fetch --tags origin
 
 # do merge tag
-$ git merge &lt;&lt;tag_name&gt;&gt;
+$ git merge &lt;tag_name&gt;
 </code></pre><h2 id="how-to-get-log-based-on-filters">How to get log based on filters</h2>
 <pre><code>// fetch commits based on commit messages
 git log --all --oneline --decorate --grep &quot;message&quot;
