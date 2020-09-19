@@ -3,212 +3,212 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/vanblog/tags/aws/</loc>
+    <loc>/tags/aws/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/aws/</loc>
+    <loc>/categories/aws/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/aws-s3/</loc>
+    <loc>/aws-s3/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/</loc>
+    <loc>/tags/aws-s3/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/post/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/s3/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/s3/</loc>
+    <loc>/tags/s3/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/</loc>
+    <loc>/categories/s3/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/aws-s3/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/</loc>
+    <loc>/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/development/</loc>
+    <loc>/categories/development/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/development/</loc>
+    <loc>/tags/development/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/webservicetips/</loc>
+    <loc>/webservicetips/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/webservice/</loc>
+    <loc>/tags/webservice/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/webservice/</loc>
+    <loc>/categories/webservice/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/linux/</loc>
+    <loc>/categories/linux/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/linux/</loc>
+    <loc>/shelltips/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/shelltips/</loc>
+    <loc>/tags/linux/</loc>
     <lastmod>2020-06-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/k8s/</loc>
+    <loc>/k8stips/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/k8s/</loc>
+    <loc>/tags/k8s/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/k8stips/</loc>
+    <loc>/categories/k8s/</loc>
     <lastmod>2020-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/java/</loc>
+    <loc>/javatips/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/java/</loc>
+    <loc>/tags/java/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/javatips/</loc>
+    <loc>/categories/java/</loc>
     <lastmod>2020-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/faq/</loc>
+    <loc>/tags/faq/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/faq/</loc>
+    <loc>/categories/faq/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/faq/</loc>
+    <loc>/faq/</loc>
     <lastmod>2020-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/docker/</loc>
+    <loc>/dockertips/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/docker/</loc>
+    <loc>/tags/docker/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/dockertips/</loc>
+    <loc>/categories/docker/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/swarm/</loc>
+    <loc>/dockerswarmtips/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/swarm/</loc>
+    <loc>/tags/swarm/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/dockerswarmtips/</loc>
+    <loc>/categories/swarm/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/page/about/</loc>
+    <loc>/page/about/</loc>
     <lastmod>2020-04-03T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/page/</loc>
+    <loc>/page/</loc>
     <lastmod>2020-04-03T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/git/</loc>
+    <loc>/gittips/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/git/</loc>
+    <loc>/tags/git/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/categories/mongo/</loc>
+    <loc>/categories/git/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/tags/mongo/</loc>
+    <loc>/categories/mongo/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/gittips/</loc>
+    <loc>/mongod/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/mongod/</loc>
+    <loc>/tags/mongo/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vanblog/page/contact/</loc>
+    <loc>/page/contact/</loc>
     <lastmod>2015-04-03T02:13:50+00:00</lastmod>
   </url>
   
