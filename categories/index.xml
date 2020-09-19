@@ -2,119 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Van&#39;s Blog</title>
-    <link>/categories/</link>
+    <link>/vanblog/categories/</link>
     <description>Recent content in Categories on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vanblog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>aws</title>
-      <link>/categories/aws/</link>
+      <link>/vanblog/categories/aws/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/aws/</guid>
+      <guid>/vanblog/categories/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>s3</title>
-      <link>/categories/s3/</link>
+      <link>/vanblog/categories/s3/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/s3/</guid>
+      <guid>/vanblog/categories/s3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>/categories/development/</link>
+      <link>/vanblog/categories/development/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/development/</guid>
+      <guid>/vanblog/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>webservice</title>
-      <link>/categories/webservice/</link>
+      <link>/vanblog/categories/webservice/</link>
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/webservice/</guid>
+      <guid>/vanblog/categories/webservice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/categories/linux/</link>
+      <link>/vanblog/categories/linux/</link>
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>/vanblog/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>/categories/k8s/</link>
+      <link>/vanblog/categories/k8s/</link>
       <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/k8s/</guid>
+      <guid>/vanblog/categories/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>/categories/java/</link>
+      <link>/vanblog/categories/java/</link>
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/java/</guid>
+      <guid>/vanblog/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>faq</title>
-      <link>/categories/faq/</link>
+      <link>/vanblog/categories/faq/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/faq/</guid>
+      <guid>/vanblog/categories/faq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>/categories/docker/</link>
+      <link>/vanblog/categories/docker/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/docker/</guid>
+      <guid>/vanblog/categories/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>swarm</title>
-      <link>/categories/swarm/</link>
+      <link>/vanblog/categories/swarm/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/swarm/</guid>
+      <guid>/vanblog/categories/swarm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>/categories/git/</link>
+      <link>/vanblog/categories/git/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/git/</guid>
+      <guid>/vanblog/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mongo</title>
-      <link>/categories/mongo/</link>
+      <link>/vanblog/categories/mongo/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/categories/mongo/</guid>
+      <guid>/vanblog/categories/mongo/</guid>
       <description></description>
     </item>
     

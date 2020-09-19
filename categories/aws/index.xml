@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aws on Van&#39;s Blog</title>
-    <link>/categories/aws/</link>
+    <link>/vanblog/categories/aws/</link>
     <description>Recent content in aws on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vanblog/categories/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AWS s3</title>
-      <link>/aws-s3/</link>
+      <link>/vanblog/aws-s3/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/aws-s3/</guid>
+      <guid>/vanblog/aws-s3/</guid>
       <description>AWS S3 Tips This page gives some tips on how to manage the files and buckets in S3
 To list all the buckets (folders) To get help for s3 command
 $ aws s3 help Try to run the following

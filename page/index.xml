@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Van&#39;s Blog</title>
-    <link>/page/</link>
+    <link>/vanblog/page/</link>
     <description>Recent content in Pages on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/vanblog/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>/page/about/</link>
+      <link>/vanblog/page/about/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0800</pubDate>
       
-      <guid>/page/about/</guid>
+      <guid>/vanblog/page/about/</guid>
       <description>Coming soon.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/page/contact/</link>
+      <link>/vanblog/page/contact/</link>
       <pubDate>Fri, 03 Apr 2015 02:13:50 +0000</pubDate>
       
-      <guid>/page/contact/</guid>
+      <guid>/vanblog/page/contact/</guid>
       <description>Contact Please contact me through email : emailto: vlvanchin@gmail.com</description>
     </item>
     
