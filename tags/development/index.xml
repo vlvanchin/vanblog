@@ -83,10 +83,8 @@ $ docker ps The above command gives the following:</description>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>/vanblog/dockerswarmtips/</guid>
-      <description>Docker Swarm to initialize Swarm $ docker swarm init how to deploy a stack of docker services // this accepts docker-compose format file for configurations
-$ docker stack deploy ex: $ docker stack deploy --compose-file docker-stack.yml vote // how to verify the stack has been deployed.
-$ docker stack services vote The above command&amp;rsquo;s output might be as follows:
-CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES 645ec6c9391c dockersamples/examplevotingapp_worker:latest &amp;quot;/bin/sh -c &#39;dotne.</description>
+      <description>Docker Swarm to initialize Swarm $ docker swarm init or $ docker swarm init --advertise-addr $(hostname -i) to join as a worker node from the above init command the manager node is configured and there would be two commands listed, one to join as a worker node and other to join as another manager node.
+$ docker swarm join --token &amp;lt;xxxxx-x-xxx...&amp;gt; &amp;lt;host&amp;gt; to show the list of nodes in action this will show the active nodes and the Leader node</description>
     </item>
     
     <item>
