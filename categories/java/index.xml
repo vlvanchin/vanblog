@@ -16,10 +16,9 @@
       <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/vanblog/javatips/</guid>
-      <description>How to run executable Java Jar files Here we have a sample1 project that shows how to build and execute java programs as a Jar file.
-├─ com └── vlv ├── demosample └── GetProps.java Above tree structure show the java source and class objects in their package structure.
-Here is the sample code for GetProps.java
-package com.vlv.demosample; import java.lang.*; import java.security.*; public class GetProps { public static void main (String [] args) { String s; try { System.</description>
+      <description>How to run a packaged Java file from any folder Here is the structure of the Java project, were bin is the output folder
+demo ├─ src | └── com | ├── van | └── Demo.java ├─ bin To compile the Demo.java try the following command from the demo folder that will place the .class file in the package folders within bin folder
+$ javac -classpath ./src ./src/com/van/Demo.java -d ./bin</description>
     </item>
     
   </channel>
