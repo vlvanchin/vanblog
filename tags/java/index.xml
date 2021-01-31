@@ -5,11 +5,7 @@
     <link>/vanblog/tags/java/</link>
     <description>Recent content in java on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/vanblog/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java</title>
       <link>/vanblog/javatips/</link>

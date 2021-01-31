@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in GIT">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="generator" content="Hugo 0.80.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="GIT">
@@ -154,7 +154,9 @@ $ git push --delete &lt;&lt;remote&gt;&gt; &lt;&lt;branch-name&gt;&gt;
 ** $ git cherry-pick --continue // to proceed on cherry-pick
 * git push &lt;&lt;remote&gt;&gt; &lt;&lt;cherry-pick-branch-name&gt;&gt;
 </code></pre><h1 id="other-useful-commands">Other useful commands:</h1>
-<h3 id="how-to-view-logs-for-a-specific-branch">how to view logs for a specific branch</h3>
+<h3 id="how-to-restore-the-modified-file-contents-from-the-remote-git">how to restore the modified file contents from the remote Git</h3>
+<pre><code>$ git restore &lt;filename&gt; 
+</code></pre><h3 id="how-to-view-logs-for-a-specific-branch">how to view logs for a specific branch</h3>
 <pre><code>$ git log --oneline --decorate &lt;branch&gt;
 </code></pre><h3 id="to-show-all-the-names-of-the-files-committed-in-this-commit">to show all the names of the files committed in this commit</h3>
 <pre><code>$ git show  --name-only &lt;commit-id&gt;
@@ -184,7 +186,8 @@ $ git log --cherry-pick --right-only --no-merges develop...master
 
 # To list left-only branch commits that are not in the master (right branch)
 $ git log --cherry-pick --left-only --no-merges develop...master
-</code></pre><h2 id="basis-commands-for-tags">Basis commands for Tags</h2>
+</code></pre><hr>
+<h2 id="basis-commands-for-tags">Basis commands for Tags</h2>
 <p>This shows command to list, create, push to remote, delete locally and in remote</p>
 <h3 id="to-list-all-tags">To list all tags</h3>
 <pre><code>$ git tag
@@ -198,7 +201,8 @@ $ git log --cherry-pick --left-only --no-merges develop...master
 <pre><code>$ git tag --delete ${tag_name}
 </code></pre><h3 id="to-deleteremove-a-tag-in-the-remote-repo">to delete/remove a tag in the remote repo</h3>
 <pre><code>$ git push origin --delete ${tag_name}
-</code></pre><h2 id="how-to-merge-a-tag-in-a-branch-to-another-branch">How to merge a Tag in a branch to another branch</h2>
+</code></pre><hr>
+<h2 id="how-to-merge-a-tag-in-a-branch-to-another-branch">How to merge a Tag in a branch to another branch</h2>
 <pre><code># change dir to the destination branch
 $ git checkout &lt;destination_branch&gt;
 

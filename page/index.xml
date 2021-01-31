@@ -5,11 +5,7 @@
     <link>/vanblog/page/</link>
     <description>Recent content in Pages on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0800</lastBuildDate>
-    
-	<atom:link href="/vanblog/page/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0800</lastBuildDate><atom:link href="/vanblog/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>/vanblog/page/about/</link>
