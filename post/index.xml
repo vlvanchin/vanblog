@@ -5,7 +5,22 @@
     <link>/vanblog/post/</link>
     <description>Recent content in Posts on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Screen cmd</title>
+      <link>/vanblog/screen/</link>
+      <pubDate>Fri, 12 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/screen/</guid>
+      <description>Screen Examples This page shows some useful commands of Screen tool in Unix
+To start a screen session: $ screen
+To list all the command Press Ctrl+a ?
+To start a named screen session: $ screen -S web
+To terminate from a current screen session / window: Press Ctrl+d
+To scroll up and down the screen Press Ctrl+a (escape)(enter) Up arrow or down arrow
+You can have multiple windows within a Screen session.</description>
+    </item>
+    
     <item>
       <title>AWS s3</title>
       <link>/vanblog/aws-s3/</link>
@@ -112,21 +127,6 @@ $ docker swarm join --token &amp;lt;xxxxx-x-xxx...&amp;gt; &amp;lt;host&amp;gt; 
       
       <guid>/vanblog/mongod/</guid>
       <description>to run mongo demon with specified config file $ sudo mongod --config /etc/mongod.conf type mongo to enter the shell for mongod $ mongo to shutdown the mongod server $ sudo mongod --shutdown </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/vanblog/screen/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/vanblog/screen/</guid>
-      <description>To start a screen session: $ screen
-To list all the command Press Ctrl+a ?
-To start a named screen session: $ screen -S web
-To terminate from a current screen session / window: Press Ctrl+d
-To scroll up and down the screen Press Ctrl+a (escape)(enter) Up arrow or down arrow
-You can have multiple windows within a Screen session. Within a screen session following commands can be used:
-To create a new window with shell Press Ctrl+a c</description>
     </item>
     
   </channel>
