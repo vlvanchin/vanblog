@@ -114,5 +114,20 @@ $ docker swarm join --token &amp;lt;xxxxx-x-xxx...&amp;gt; &amp;lt;host&amp;gt; 
       <description>to run mongo demon with specified config file $ sudo mongod --config /etc/mongod.conf type mongo to enter the shell for mongod $ mongo to shutdown the mongod server $ sudo mongod --shutdown </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/vanblog/screen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/screen/</guid>
+      <description>To start a screen session: $ screen
+To list all the command Press Ctrl+a ?
+To start a named screen session: $ screen -S web
+To terminate from a current screen session / window: Press Ctrl+d
+To scroll up and down the screen Press Ctrl+a (escape)(enter) Up arrow or down arrow
+You can have multiple windows within a Screen session. Within a screen session following commands can be used:
+To create a new window with shell Press Ctrl+a c</description>
+    </item>
+    
   </channel>
 </rss>
