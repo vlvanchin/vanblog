@@ -18,7 +18,7 @@ Maven Phases Here are the list of Phases in the maven lifecycle
  other phases are
  clean site
  Most of the phases have many steps or processes within., example: package
-1. validate 1. generate-sources 1. process-sources 1. generate-resources 1. process-resources 1. compile Maven Archetypes Here are some of the useful commands of Archetypes</description>
+1. validate 2. generate-sources 3. process-sources 4. generate-resources 5. process-resources 6. compile Maven Archetypes Here are some of the useful commands of Archetypes</description>
     </item>
     
     <item>
@@ -32,8 +32,7 @@ To start a screen session: $ screen
 To list all the command Press Ctrl+a ?
 To start a named screen session: $ screen -S web
 To terminate from a current screen session / window: Press Ctrl+d
-To scroll up and down the screen Press Ctrl+a (escape)(enter) Up arrow or down arrow
-You can have multiple windows within a Screen session.</description>
+To scroll up and down the screen Press Ctrl+a (escape) use Up arrow or down arrow keys, once done hit &#39;q&#39; to quit</description>
     </item>
     
     <item>

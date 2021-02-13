@@ -17,8 +17,7 @@ To start a screen session: $ screen
 To list all the command Press Ctrl+a ?
 To start a named screen session: $ screen -S web
 To terminate from a current screen session / window: Press Ctrl+d
-To scroll up and down the screen Press Ctrl+a (escape)(enter) Up arrow or down arrow
-You can have multiple windows within a Screen session.</description>
+To scroll up and down the screen Press Ctrl+a (escape) use Up arrow or down arrow keys, once done hit &#39;q&#39; to quit</description>
     </item>
     
   </channel>
