@@ -5,7 +5,25 @@
     <link>/vanblog/categories/</link>
     <description>Recent content in Categories on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maven</title>
+      <link>/vanblog/categories/maven/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/categories/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mvn</title>
+      <link>/vanblog/categories/mvn/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/categories/mvn/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>unix</title>
       <link>/vanblog/categories/unix/</link>

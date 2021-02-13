@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven on Van&#39;s Blog</title>
+    <link>/vanblog/categories/maven/</link>
+    <description>Recent content in Maven on Van&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/categories/maven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maven</title>
+      <link>/vanblog/maven/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/maven/</guid>
+      <description>Maven Examples This page shows some useful commands of Maven tool
+Maven Phases Here are the list of Phases in the maven lifecycle
+ validate compile test package integration-test verify install deploy
+ other phases are
+ clean site
+ Most of the phases have many steps or processes within., example: package
+1. validate 1. generate-sources 1. process-sources 1. generate-resources 1. process-resources 1. compile Maven Archetypes Here are some of the useful commands of Archetypes</description>
+    </item>
+    
+  </channel>
+</rss>

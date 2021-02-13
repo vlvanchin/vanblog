@@ -5,7 +5,22 @@
     <link>/vanblog/</link>
     <description>Recent content on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 12 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maven</title>
+      <link>/vanblog/maven/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/maven/</guid>
+      <description>Maven Examples This page shows some useful commands of Maven tool
+Maven Phases Here are the list of Phases in the maven lifecycle
+ validate compile test package integration-test verify install deploy
+ other phases are
+ clean site
+ Most of the phases have many steps or processes within., example: package
+1. validate 1. generate-sources 1. process-sources 1. generate-resources 1. process-resources 1. compile Maven Archetypes Here are some of the useful commands of Archetypes</description>
+    </item>
+    
     <item>
       <title>Screen cmd</title>
       <link>/vanblog/screen/</link>

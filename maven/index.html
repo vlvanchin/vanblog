@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Maven &middot; </title>
+        <meta name="description" content="This page shows some basic commands of Maven Tool">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Maven">
+<meta property="og:description" content="This page shows some basic commands of Maven Tool">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/vanblog/maven/">
+        <link rel="stylesheet" href="/vanblog/dist/site.css">
+        <link rel="stylesheet" href="/vanblog/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Van&#39;s Blog" href="/vanblog/">Van&#39;s Blog</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/vanblog/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/vlvanchin" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/vlvanchin" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:vlvanchin@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="AWS s3" href="/vanblog/aws-s3/">AWS s3</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/vanblog/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Docker" href="/vanblog/dockertips/">Docker</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Docker Swarm" href="/vanblog/dockerswarmtips/">Docker Swarm</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="FAQs" href="/vanblog/faq/">FAQs</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="GIT" href="/vanblog/gittips/">GIT</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Java" href="/vanblog/javatips/">Java</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="K8s" href="/vanblog/k8stips/">K8s</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Linux" href="/vanblog/shelltips/">Linux</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Maven" href="/vanblog/maven/">Maven</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Mongo" href="/vanblog/mongod/">Mongo</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Screen cmd" href="/vanblog/screen/">Screen cmd</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Webservice" href="/vanblog/webservicetips/">Webservice</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Maven</h1>
+    
+        <p class="post-description" itemprop="description">This page shows some basic commands of Maven Tool</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2021-02-13" itemprop="datePublished">Sat, Feb 13, 2021</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="maven-examples">Maven Examples</h1>
+<p>This page shows some useful commands of Maven tool</p>
+<h2 id="maven-phases">Maven Phases</h2>
+<p>Here are the list of Phases in the maven lifecycle</p>
+<blockquote>
+<p>validate
+compile
+test
+package
+integration-test
+verify
+install
+deploy</p>
+</blockquote>
+<p>other phases are</p>
+<blockquote>
+<p>clean
+site</p>
+</blockquote>
+<p>Most of the phases have many steps or processes within., example: <code>package</code></p>
+<pre><code>1. validate
+1. generate-sources
+1. process-sources
+1. generate-resources
+1. process-resources
+1. compile
+</code></pre><h2 id="maven-archetypes">Maven Archetypes</h2>
+<p>Here are some of the useful commands of Archetypes</p>
+<h3 id="generate">:Generate</h3>
+<p>The following command will create a Maven project com.my.app:my-first-app:1.0-SNAPSHOT application using the Generate maven goal., <code>archetype:generate</code></p>
+<pre><code>mvn archetype:generate -DgroupId=com.my.app -DartifactId=my-first-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+</code></pre><h2 id="maven-goals-and-phases-can-be-invoked-in-a-sequence-together">Maven Goals and Phases can be invoked in a sequence together</h2>
+<p>Here is an example to clean the project, copy the dependencies and package the project</p>
+<pre><code>mvn clean dependency:copy-dependencies package
+</code></pre><h3 id="maven-package">maven package</h3>
+<p>The following command will create the jar file into the target folder</p>
+<pre><code>mvn package
+</code></pre><h3 id="execute-the-generated-package">execute the generated package</h3>
+<p>The following command will execute the jar file</p>
+<pre><code>java -cp target/my-first-app-1.0-SNAPSHOT.jar com.my.app.App
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/vanblog/tags/maven/">Maven</a>, 
+            
+                <a href="/vanblog/tags/mvn/">Mvn</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=Maven&url=%2fvanblog%2fmaven%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fvanblog%2fmaven%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fvanblog%2fmaven%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Van&#39;s Blog" href="/vanblog/">Van&#39;s Blog</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2021 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/vanblog/js/jquery-1.11.3.min.js"></script>
+        <script src="/vanblog/js/jquery.fitvids.js"></script>
+        <script src="/vanblog/js/scripts.js"></script>
+    </body>
+</html>
+
