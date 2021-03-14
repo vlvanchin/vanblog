@@ -5,7 +5,25 @@
     <link>/vanblog/tags/</link>
     <description>Recent content in Tags on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>compose</title>
+      <link>/vanblog/tags/compose/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/tags/compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>/vanblog/tags/ssh/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Maven</title>
       <link>/vanblog/tags/maven/</link>

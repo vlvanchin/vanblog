@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SSH &middot; </title>
+        <meta name="description" content="This page shows some basic commands used in SSH">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="SSH">
+<meta property="og:description" content="This page shows some basic commands used in SSH">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/vanblog/ssh/">
+        <link rel="stylesheet" href="/vanblog/dist/site.css">
+        <link rel="stylesheet" href="/vanblog/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Van&#39;s Blog" href="/vanblog/">Van&#39;s Blog</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/vanblog/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/vlvanchin" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/vlvanchin" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:vlvanchin@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="AWS s3" href="/vanblog/aws-s3/">AWS s3</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/vanblog/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Docker" href="/vanblog/dockertips/">Docker</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="docker compose" href="/vanblog/compose/">docker compose</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Docker Swarm" href="/vanblog/dockerswarmtips/">Docker Swarm</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="FAQs" href="/vanblog/faq/">FAQs</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="GIT" href="/vanblog/gittips/">GIT</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Java" href="/vanblog/javatips/">Java</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="K8s" href="/vanblog/k8stips/">K8s</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Linux" href="/vanblog/shelltips/">Linux</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Maven" href="/vanblog/maven/">Maven</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Mongo" href="/vanblog/mongod/">Mongo</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Screen cmd" href="/vanblog/screen/">Screen cmd</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="SSH" href="/vanblog/ssh/">SSH</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Webservice" href="/vanblog/webservicetips/">Webservice</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">SSH</h1>
+    
+        <p class="post-description" itemprop="description">This page shows some basic commands used in SSH</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2021-03-14" itemprop="datePublished">Sun, Mar 14, 2021</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="ssh-keygen">ssh-keygen</h1>
+<p>This section shows some of the useful commands for Ssh-keygen.</p>
+<h2 id="how-to-generate-ssh-keypair">how to generate ssh keypair</h2>
+<pre><code>$ ssh-keygen // uses all the default to generate the keypair
+</code></pre><ul>
+<li>to generate with different filename</li>
+</ul>
+<pre><code>$ ssh-keygen -f &lt;filename&gt;
+</code></pre><ul>
+<li>to generate with different type of coding, RSA, DSA</li>
+</ul>
+<pre><code>$ ssh-keygen -t &lt;code type&gt;
+</code></pre><ul>
+<li>to generate with number of bits</li>
+</ul>
+<pre><code>$ ssh-keygen -b 2048
+</code></pre><ul>
+<li>to generate with a comment</li>
+</ul>
+<pre><code>$ ssh-keygen -C &lt;comment | email&gt;
+</code></pre><ul>
+<li>to generate key pair with new passpharse (empty string)</li>
+</ul>
+<pre><code>$ ssh-keygen -N &quot;&quot; 
+</code></pre><h2 id="how-to-add-a-passphrase-to-the-existing-keys">how to add a passphrase to the existing keys</h2>
+<pre><code>$ ssh-keygen -p -f &lt;filename&gt;
+</code></pre><h2 id="to-list-the-associated-public-key-for-any-private-key">to list the associated public key for any private key</h2>
+<pre><code>$ ssh-keygen -y -f &lt;private-key-filename&gt;
+</code></pre><h2 id="filefolder-permission-to-be-set">File/folder permission to be set</h2>
+<ul>
+<li>
+<p>the folder persmission where all the ssh keys are housed should be <code>0700</code>.</p>
+</li>
+<li>
+<p>the files below should be configured with <code>0644</code></p>
+<ul>
+<li>authorized_keys</li>
+<li>known_hosts</li>
+<li>config</li>
+<li>all .pub files</li>
+</ul>
+</li>
+<li>
+<p>the private key files should be with <code>0600</code></p>
+</li>
+</ul>
+<h2 id="to-display-the-contents-of-know_hosts-file">to display the contents of know_hosts file</h2>
+<pre><code>$ ssh-keygen -lv -f known_hosts
+</code></pre><h2 id="to-hash-the-keys-of-the-known_hosts">to hash the keys of the known_hosts</h2>
+<pre><code>$ ssh-keygen -H -f known_hosts
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/vanblog/tags/ssh/">ssh</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=SSH&url=%2fvanblog%2fssh%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fvanblog%2fssh%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fvanblog%2fssh%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Van&#39;s Blog" href="/vanblog/">Van&#39;s Blog</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2021 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/vanblog/js/jquery-1.11.3.min.js"></script>
+        <script src="/vanblog/js/jquery.fitvids.js"></script>
+        <script src="/vanblog/js/scripts.js"></script>
+    </body>
+</html>
+

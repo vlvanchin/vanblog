@@ -5,7 +5,29 @@
     <link>/vanblog/</link>
     <description>Recent content on Van&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker compose</title>
+      <link>/vanblog/compose/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/compose/</guid>
+      <description>Docker-compose This section shows some of the useful commands for Docker-compose. &amp;hellip; it is a good practice to do compose stuff from a independent folder
+installation of docker-compose download and house the app /usr/local/bin
+$ udo curl -L &amp;quot;https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose change the mode of the docker-compose to executable
+chmod +x /usr/local/bin/docker-compose  check the version of docker-compose using docker-compose version  Steps to try docker-compose   create an arbitary folder say docker-demo and cd to it, it is the project folder</description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>/vanblog/ssh/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/ssh/</guid>
+      <description>ssh-keygen This section shows some of the useful commands for Ssh-keygen.
+how to generate ssh keypair $ ssh-keygen // uses all the default to generate the keypair  to generate with different filename  $ ssh-keygen -f &amp;lt;filename&amp;gt;  to generate with different type of coding, RSA, DSA  $ ssh-keygen -t &amp;lt;code type&amp;gt;  to generate with number of bits  $ ssh-keygen -b 2048  to generate with a comment  $ ssh-keygen -C &amp;lt;comment | email&amp;gt;  to generate key pair with new passpharse (empty string)  $ ssh-keygen -N &amp;quot;&amp;quot; how to add a passphrase to the existing keys $ ssh-keygen -p -f &amp;lt;filename&amp;gt; to list the associated public key for any private key $ ssh-keygen -y -f &amp;lt;private-key-filename&amp;gt; File/folder permission to be set   the folder persmission where all the ssh keys are housed should be 0700.</description>
+    </item>
+    
     <item>
       <title>Maven</title>
       <link>/vanblog/maven/</link>

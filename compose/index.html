@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>docker compose &middot; </title>
+        <meta name="description" content="This page shows some basic commands used in Docker-Compose">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="docker compose">
+<meta property="og:description" content="This page shows some basic commands used in Docker-Compose">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/vanblog/compose/">
+        <link rel="stylesheet" href="/vanblog/dist/site.css">
+        <link rel="stylesheet" href="/vanblog/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="Van&#39;s Blog" href="/vanblog/">Van&#39;s Blog</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/vanblog/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/vlvanchin" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/vlvanchin" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:vlvanchin@gmail.com">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="AWS s3" href="/vanblog/aws-s3/">AWS s3</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/vanblog/page/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Docker" href="/vanblog/dockertips/">Docker</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="docker compose" href="/vanblog/compose/">docker compose</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Docker Swarm" href="/vanblog/dockerswarmtips/">Docker Swarm</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="FAQs" href="/vanblog/faq/">FAQs</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="GIT" href="/vanblog/gittips/">GIT</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Java" href="/vanblog/javatips/">Java</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="K8s" href="/vanblog/k8stips/">K8s</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Linux" href="/vanblog/shelltips/">Linux</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Maven" href="/vanblog/maven/">Maven</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Mongo" href="/vanblog/mongod/">Mongo</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Screen cmd" href="/vanblog/screen/">Screen cmd</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="SSH" href="/vanblog/ssh/">SSH</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Webservice" href="/vanblog/webservicetips/">Webservice</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">docker compose</h1>
+    
+        <p class="post-description" itemprop="description">This page shows some basic commands used in Docker-Compose</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2021-03-14" itemprop="datePublished">Sun, Mar 14, 2021</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h1 id="docker-compose">Docker-compose</h1>
+<p>This section shows some of the useful commands for Docker-compose. &hellip; it is a good practice to do compose stuff from a independent folder</p>
+<h2 id="installation-of-docker-compose">installation of docker-compose</h2>
+<p>download and house the app /usr/local/bin</p>
+<pre><code>$ udo curl -L &quot;https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre><p>change the mode of the docker-compose to executable</p>
+<pre><code>chmod +x /usr/local/bin/docker-compose
+</code></pre><ul>
+<li>check the version of docker-compose using <code>docker-compose version</code></li>
+</ul>
+<h2 id="steps-to-try-docker-compose">Steps to try docker-compose</h2>
+<ul>
+<li>
+<p>create an arbitary folder say <em>docker-demo</em> and cd to it, it is the project folder</p>
+</li>
+<li>
+<p>create an app folder and write an index.html file with some static contents</p>
+</li>
+<li>
+<p>create an docker-compose.yml in the project folder</p>
+</li>
+</ul>
+<pre><code>/docker-demo
+|
+|--app
+|    |
+|    |--index.html
+|
+|--docker-compose.yml    
+</code></pre><ul>
+<li>content of the docker-compose.yml is as follows</li>
+</ul>
+<p>this file uses 3.7 version of the compose syntax, the configuration of services is done below having one <em>web</em> service that uses the image of <em>nginx:alpine</em> as a reverse proxy. The port <em>8000</em> is used from the host system which maps to the port <em>80</em> of the container. The volume for the container is mapped from <em>app</em> folder of host to <em>/usr/share/nginx/html</em> in the container</p>
+<pre><code>version: '3.7'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - &quot;8000:80&quot;
+    volumes:
+      - ./app:/usr/share/nginx/html
+</code></pre><h2 id="running-docker-compose">Running docker-compose</h2>
+<ul>
+<li>to test this from the project folder run the following command</li>
+</ul>
+<pre><code>$ docker-compose up -d
+</code></pre><ul>
+<li>to view the status of the all the containers used in the app</li>
+</ul>
+<pre><code>$ docker-compose ps
+</code></pre><h2 id="other-useful-commands-in-docker-compose">other useful commands in docker-compose</h2>
+<ul>
+<li>to view the logs of the services in the application</li>
+</ul>
+<pre><code>$ docker-compose logs
+</code></pre><ul>
+<li>to pause the application</li>
+</ul>
+<pre><code>$ docker-compose pause
+</code></pre><ul>
+<li>to unpause the application</li>
+</ul>
+<pre><code>$ docker-compose unpause
+</code></pre><ul>
+<li>to stop the service, this stops all the services container executions</li>
+</ul>
+<pre><code>$ docker-compose stop
+</code></pre><ul>
+<li>to start the services</li>
+</ul>
+<pre><code>$ docker-compose start
+</code></pre><ul>
+<li>to down all the services, this terminates that containers and removes the network but not the volumes</li>
+</ul>
+<pre><code>$ docker-compose down
+</code></pre><ul>
+<li>to list all the images</li>
+</ul>
+<pre><code>$ docker-compose images
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/vanblog/tags/compose/">compose</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=docker%20compose&url=%2fvanblog%2fcompose%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
+
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fvanblog%2fcompose%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fvanblog%2fcompose%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="Van&#39;s Blog" href="/vanblog/">Van&#39;s Blog</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2021 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/vanblog/js/jquery-1.11.3.min.js"></script>
+        <script src="/vanblog/js/jquery.fitvids.js"></script>
+        <script src="/vanblog/js/scripts.js"></script>
+    </body>
+</html>
+

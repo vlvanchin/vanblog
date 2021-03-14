@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on Van&#39;s Blog</title>
+    <link>/vanblog/categories/ssh/</link>
+    <description>Recent content in ssh on Van&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH</title>
+      <link>/vanblog/ssh/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/ssh/</guid>
+      <description>ssh-keygen This section shows some of the useful commands for Ssh-keygen.
+how to generate ssh keypair $ ssh-keygen // uses all the default to generate the keypair  to generate with different filename  $ ssh-keygen -f &amp;lt;filename&amp;gt;  to generate with different type of coding, RSA, DSA  $ ssh-keygen -t &amp;lt;code type&amp;gt;  to generate with number of bits  $ ssh-keygen -b 2048  to generate with a comment  $ ssh-keygen -C &amp;lt;comment | email&amp;gt;  to generate key pair with new passpharse (empty string)  $ ssh-keygen -N &amp;quot;&amp;quot; how to add a passphrase to the existing keys $ ssh-keygen -p -f &amp;lt;filename&amp;gt; to list the associated public key for any private key $ ssh-keygen -y -f &amp;lt;private-key-filename&amp;gt; File/folder permission to be set   the folder persmission where all the ssh keys are housed should be 0700.</description>
+    </item>
+    
+  </channel>
+</rss>
