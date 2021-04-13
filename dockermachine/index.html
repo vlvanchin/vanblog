@@ -3,23 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>java &middot; </title>
-        <meta name="description" content="Knowledge sharing enthusiasm blog :)">
+        <title>docker machine &middot; </title>
+        <meta name="description" content="This page shows some basic commands used in Docker-Machine">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.80.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="java">
-<meta property="og:description" content="Knowledge sharing enthusiasm blog :)">
-<meta property="og:type" content="website">
-<meta property="og:url" content="/vanblog/categories/java/">
+        <meta property="og:title" content="docker machine">
+<meta property="og:description" content="This page shows some basic commands used in Docker-Machine">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/vanblog/dockermachine/">
         <link rel="stylesheet" href="/vanblog/dist/site.css">
         <link rel="stylesheet" href="/vanblog/dist/syntax.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        
-            <link href="/vanblog/categories/java/index.xml" rel="alternate" type="application/rss+xml">
         
         
         
@@ -132,34 +130,104 @@
             <div id="container">
 
 
-<div id="post-index" class="container">
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">docker machine</h1>
     
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name">Let&#39;s Learn Together</h1>
-        <p>Knowledge sharing enthusiasm blog :)</p>
-    </header>
+        <p class="post-description" itemprop="description">This page shows some basic commands used in Docker-Machine</p>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2021-04-13" itemprop="datePublished">Tue, Apr 13, 2021</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">van</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
 
+        <div class="post-content clearfix" itemprop="articleBody">
+    
 
+    <h1 id="docker-machine">Docker-machine</h1>
+<p>This section shows some of the useful commands for Docker-machine. &hellip; it is a good practice to do run docker machines from any folder.</p>
+<h2 id="docker-machine-installation">Docker-machine Installation</h2>
+<p>Download the <code>docker-machine</code> from the $base URL, extract and change mode for execution</p>
+<pre><code>$ curl -L $base/docker-machine-$(uname -s)-$(uname -m) &gt; /tmp/docker-machine
 
-    <ol class="post-list">
-        
-        
-            <li class="post-stub">
-    <a href="/vanblog/javatips/">
-        <h4 class="post-stub-title">Java</h4>
-        
-            <p class="post-stub-description">This page show some of the most used commands in Java</p>
-        
-        
-    </a>
-</li>
-        
-    </ol>
+$ sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
 
-    <div class="post-navigation">
+$ chmod +x /usr/local/bin/docker-machine
+</code></pre><p>Test if the tool is installed, try the following <code>$ docker-machine version</code>. To view all the option try <code>$ docker-machine -h</code>.</p>
+<h2 id="docker-machine-usefull-commands">Docker-machine usefull commands</h2>
+<p>To view all the docker-machines in the host machine</p>
+<pre><code>$ docker-machine ls
+</code></pre><p>In order to create a docker-machine, where the machine name is &lsquo;default&rsquo;, try the following</p>
+<pre><code>$ docker-machine create --driver virtualbox default
+</code></pre><p>here we have provided the &lsquo;virtualbox&rsquo; driver to be as virtualization.</p>
+<p>To view the environment of the newly created docker-machine</p>
+<pre><code>$ docker-machine env default
+</code></pre><p>To execute the docker commands in the newly created docker-machine is as follows. This maps the default machine</p>
+<pre><code>$ eval $(docker-machine env default)
+</code></pre><p>hereafter any docker commands run will be executed in the default docker-machine, the prompt in the terminal will show the name of the docker-machine</p>
+<p>Commands to &lsquo;start&rsquo; or &lsquo;stop&rsquo; the docker-machine eg., default</p>
+<pre><code>$ docker-machine start default
+
+$ docker-machine stop default
+</code></pre><h3 id="docker-commands-issued-to-the-default-machine">docker commands issued to the default machine</h3>
+<p>To find the IP address of the default machine</p>
+<pre><code>$ docker-machine ip default
+</code></pre><p>To view or browse default machine at port 8080</p>
+<pre><code>$ curl $(docker-machine ip default):8080
+</code></pre><p>To unmap the default docker-machine</p>
+<pre><code>$ eval $(docker-machine env default -u)
+</code></pre>
+</div>
+
+        <footer class="post-footer clearfix">
+    
+        <p class="post-tags">
+            <span>Tagged:</span>
+            
+            
+                <a href="/vanblog/tags/machine/">machine</a>
+            
+        </p>
+    
+
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=docker%20machine&url=%2fvanblog%2fdockermachine%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
         
 
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fvanblog%2fdockermachine%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
+
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fvanblog%2fdockermachine%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
     </div>
+</footer>
+
+        
+    </article>
 </div>
 
             </div>
@@ -191,3 +259,4 @@
         <script src="/vanblog/js/scripts.js"></script>
     </body>
 </html>
+

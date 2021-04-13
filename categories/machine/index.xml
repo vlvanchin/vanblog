@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine on Van&#39;s Blog</title>
+    <link>/vanblog/categories/machine/</link>
+    <description>Recent content in machine on Van&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="/vanblog/categories/machine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker machine</title>
+      <link>/vanblog/dockermachine/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/dockermachine/</guid>
+      <description>Docker-machine This section shows some of the useful commands for Docker-machine. &amp;hellip; it is a good practice to do run docker machines from any folder.
+Docker-machine Installation Download the docker-machine from the $base URL, extract and change mode for execution
+$ curl -L $base/docker-machine-$(uname -s)-$(uname -m) &amp;gt; /tmp/docker-machine $ sudo mv /tmp/docker-machine /usr/local/bin/docker-machine $ chmod +x /usr/local/bin/docker-machine Test if the tool is installed, try the following $ docker-machine version. To view all the option try $ docker-machine -h.</description>
+    </item>
+    
+  </channel>
+</rss>
