@@ -176,10 +176,20 @@
 <li>to generate key pair with new passpharse (empty string)</li>
 </ul>
 <pre><code>$ ssh-keygen -N &quot;&quot; 
+</code></pre><ul>
+<li>to generate a key pair in PEM format with comments and save it to a different filename</li>
+</ul>
+<pre><code>$ ssh-keygen -m PEM -C &quot;my special vm&quot; -f my_special_vm.pem
 </code></pre><h2 id="how-to-add-a-passphrase-to-the-existing-keys">how to add a passphrase to the existing keys</h2>
 <pre><code>$ ssh-keygen -p -f &lt;filename&gt;
 </code></pre><h2 id="to-list-the-associated-public-key-for-any-private-key">to list the associated public key for any private key</h2>
 <pre><code>$ ssh-keygen -y -f &lt;private-key-filename&gt;
+</code></pre><h2 id="how-to-upload-the-public-key-to-my-special-vm-machine-so-that-i-would-not-be-required-to-key-in-my-credentials-each-time">how to upload the public key to &ldquo;my special vm&rdquo; machine, so that i would not be required to key in my credentials each time</h2>
+<pre><code>$ ssh-keygen -y -f my_special_vm.pem | ssh &lt;username&gt;@&lt;server_domain_name-or-ip_address&gt; 'cat &gt;&gt; ~/.ssh/authorized_keys'
+
+or
+
+$ ssh-copy-id -i linux_academy.pem.pub &lt;username&gt;@&lt;server_domain_name-or-ip_address&gt;
 </code></pre><h2 id="filefolder-permission-to-be-set">File/folder permission to be set</h2>
 <ul>
 <li>
