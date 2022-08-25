@@ -25,8 +25,8 @@ $ curl -L $base/docker-machine-$(uname -s)-$(uname -m) &amp;gt; /tmp/docker-mach
       <guid>/vanblog/compose/</guid>
       <description>Docker-compose This section shows some of the useful commands for Docker-compose. &amp;hellip; it is a good practice to do compose stuff from a independent folder
 installation of docker-compose download and house the app /usr/local/bin
-$ udo curl -L &amp;quot;https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)&amp;quot; -o /usr/local/bin/docker-compose change the mode of the docker-compose to executable
-chmod +x /usr/local/bin/docker-compose  check the version of docker-compose using docker-compose version  Steps to try docker-compose   create an arbitary folder say docker-demo and cd to it, it is the project folder</description>
+$ udo curl -L &amp;#34;https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)&amp;#34; -o /usr/local/bin/docker-compose change the mode of the docker-compose to executable
+chmod +x /usr/local/bin/docker-compose check the version of docker-compose using docker-compose version Steps to try docker-compose create an arbitary folder say docker-demo and cd to it, it is the project folder</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@ chmod +x /usr/local/bin/docker-compose  check the version of docker-compose usin
       
       <guid>/vanblog/ssh/</guid>
       <description>ssh-keygen This section shows some of the useful commands for Ssh-keygen.
-how to generate ssh keypair $ ssh-keygen // uses all the default to generate the keypair  to generate with different filename  $ ssh-keygen -f &amp;lt;filename&amp;gt;  to generate with different type of coding, RSA, DSA  $ ssh-keygen -t &amp;lt;code type&amp;gt;  to generate with number of bits  $ ssh-keygen -b 2048  to generate with a comment  $ ssh-keygen -C &amp;lt;comment | email&amp;gt;  to generate key pair with new passpharse (empty string)  $ ssh-keygen -N &amp;quot;&amp;quot;  to generate a key pair in PEM format with comments and save it to a different filename  $ ssh-keygen -m PEM -C &amp;quot;my special vm&amp;quot; -f my_special_vm.</description>
+how to generate ssh keypair $ ssh-keygen // uses all the default to generate the keypair to generate with different filename $ ssh-keygen -f &amp;lt;filename&amp;gt; to generate with different type of coding, RSA, DSA $ ssh-keygen -t &amp;lt;code type&amp;gt; to generate with number of bits $ ssh-keygen -b 2048 to generate with a comment $ ssh-keygen -C &amp;lt;comment | email&amp;gt; to generate key pair with new passpharse (empty string) $ ssh-keygen -N &amp;#34;&amp;#34; to generate a key pair in PEM format with comments and save it to a different filename $ ssh-keygen -m PEM -C &amp;#34;my special vm&amp;#34; -f my_special_vm.</description>
     </item>
     
     <item>
@@ -47,10 +47,10 @@ how to generate ssh keypair $ ssh-keygen // uses all the default to generate the
       <guid>/vanblog/maven/</guid>
       <description>Maven Examples This page shows some useful commands of Maven tool
 Maven Phases Here are the list of Phases in the maven lifecycle
- validate compile test package integration-test verify install deploy
- other phases are
- clean site
- Most of the phases have many steps or processes within., example: package
+validate compile test package integration-test verify install deploy
+other phases are
+clean site
+Most of the phases have many steps or processes within., example: package
 1. validate 2. generate-sources 3. process-sources 4. generate-resources 5. process-resources 6. compile Maven Archetypes Here are some of the useful commands of Archetypes</description>
     </item>
     
@@ -98,7 +98,7 @@ $ aws s3 ls s3://test_bucket to list all the files in a specific bucket with a p
       
       <guid>/vanblog/shelltips/</guid>
       <description>Some commands that benifit you How to search text in folder and sub-folders // to search &amp;ldquo;httpclient&amp;rdquo; text in current and subfolders // -r is recursive and -l to list the file along with path.
-$ grep -rl &amp;quot;httpclient&amp;quot; ./ Commands for Vimdiff // to jump to the next/previous difference
+$ grep -rl &amp;#34;httpclient&amp;#34; ./ Commands for Vimdiff // to jump to the next/previous difference
 ]c : - next difference [c : - previous difference // to bringing difference from other file to current file</description>
     </item>
     
@@ -109,8 +109,8 @@ $ grep -rl &amp;quot;httpclient&amp;quot; ./ Commands for Vimdiff // to jump to 
       
       <guid>/vanblog/k8stips/</guid>
       <description>Kubernetes Tips: Selfhelp page to test and learn about Kubernetes.
-Install kubectl that CLI to access and control cluster.  On Ubuntu   $ sudo snap install kubectl --classic To test kubectl try the following  $ kubectl version the output would be as follows:
-Client Version: version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;11&amp;quot;, GitVersion:&amp;quot;v1.11.0&amp;quot;, GitCommit:&amp;quot;91e7b4fd3c980becec37ceefe&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2018-06-27T20:17:28Z&amp;quot;, GoVersion:&amp;quot;go1.10.2&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} The connection to the server localhost:8080 was refused - did you specify the right host or port?</description>
+Install kubectl that CLI to access and control cluster. On Ubuntu $ sudo snap install kubectl --classic To test kubectl try the following $ kubectl version the output would be as follows:
+Client Version: version.Info{Major:&amp;#34;1&amp;#34;, Minor:&amp;#34;11&amp;#34;, GitVersion:&amp;#34;v1.11.0&amp;#34;, GitCommit:&amp;#34;91e7b4fd3c980becec37ceefe&amp;#34;, GitTreeState:&amp;#34;clean&amp;#34;, BuildDate:&amp;#34;2018-06-27T20:17:28Z&amp;#34;, GoVersion:&amp;#34;go1.10.2&amp;#34;, Compiler:&amp;#34;gc&amp;#34;, Platform:&amp;#34;linux/amd64&amp;#34;} The connection to the server localhost:8080 was refused - did you specify the right host or port? If your output is like above then it means that there is no cluster up and running.</description>
     </item>
     
     <item>
@@ -131,8 +131,9 @@ $ javac -classpath ./src ./src/com/van/Demo.java -d ./bin</description>
       
       <guid>/vanblog/faq/</guid>
       <description>How to fix the miss commits between the two branches in two separate repositories? Steps to be done to fix the miss commits between the two branches say the development branch in origin and upstream remotes.
- Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
- $ git checkout -b commonCommitBranch 2449134b726f723fa  update both the remotes</description>
+Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
+$ git checkout -b commonCommitBranch 2449134b726f723fa update both the remotes
+$ git fetch upstream $ git fetch origin now rebase from the upstream branch to the working branch</description>
     </item>
     
     <item>
@@ -142,10 +143,19 @@ $ javac -classpath ./src ./src/com/van/Demo.java -d ./bin</description>
       
       <guid>/vanblog/dockertips/</guid>
       <description>Docker Commands: Here are a few basic commands used in Docker // To pull a image &amp;lsquo;alpine&amp;rsquo; from docker registry. note to be logged in DockerHub site.
-$ docker pull alpine // run docker container and execute &amp;lsquo;ls -l&amp;rsquo; command
+$ docker pull alpine // run docker container and execute &amp;rsquo;ls -l&amp;rsquo; command
 $ docker run alpine ls -l // view all docker containers
 $ docker ps -a // view all docker containers currently running
 $ docker ps The above command gives the following:</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/vanblog/page/about/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/vanblog/page/about/</guid>
+      <description>Coming soon.</description>
     </item>
     
     <item>
@@ -156,15 +166,6 @@ $ docker ps The above command gives the following:</description>
       <guid>/vanblog/dockerswarmtips/</guid>
       <description>Docker Swarm to initialize Swarm $ docker swarm init or $ docker swarm init --advertise-addr $(hostname -i) to join as a worker node from the above init command the manager node is configured and there would be two commands listed, one to join as a worker node and other to join as another manager node.
 $ docker swarm join --token &amp;lt;xxxxx-x-xxx...&amp;gt; &amp;lt;host&amp;gt; to show the list of nodes in action this will show the active nodes and the Leader node</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/vanblog/page/about/</link>
-      <pubDate>Fri, 03 Apr 2020 00:00:00 +0800</pubDate>
-      
-      <guid>/vanblog/page/about/</guid>
-      <description>Coming soon.</description>
     </item>
     
     <item>

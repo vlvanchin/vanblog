@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in Docker">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Docker">
@@ -155,73 +155,73 @@
     <h1 id="docker-commands">Docker Commands:</h1>
 <h2 id="here-are-a-few-basic-commands-used-in-docker">Here are a few basic commands used in Docker</h2>
 <p>// To pull a image &lsquo;alpine&rsquo; from docker registry.  note to be logged in DockerHub site.</p>
-<pre><code>$ docker pull alpine
-</code></pre><p>// run docker container and execute &lsquo;ls -l&rsquo; command</p>
-<pre><code>$ docker run alpine ls -l
+<pre tabindex="0"><code>$ docker pull alpine
+</code></pre><p>// run docker container and execute &rsquo;ls -l&rsquo; command</p>
+<pre tabindex="0"><code>$ docker run alpine ls -l
 </code></pre><p>// view all docker containers</p>
-<pre><code>$ docker ps -a
+<pre tabindex="0"><code>$ docker ps -a
 </code></pre><p>// view all docker containers currently running</p>
-<pre><code>$ docker ps
+<pre tabindex="0"><code>$ docker ps
 </code></pre><p>The above command gives the following:</p>
-<pre><code>CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS               NAMES
+<pre tabindex="0"><code>CONTAINER ID        IMAGE                       COMMAND                  CREATED             STATUS              PORTS               NAMES
 
-55bb9c2b8530        dockersamples/static-site   &quot;/bin/sh -c 'cd /u...&quot;   2 minutes ago       Up 2 minutes        80/tcp, 443/tcp     vigorous_swirles
-</code></pre><p>// how to execute &lsquo;echo &ldquo;hello from alpine&rdquo;&rsquo; command</p>
-<pre><code>$ docker run alpine echo &quot;hello from alpine&quot;
+55bb9c2b8530        dockersamples/static-site   &#34;/bin/sh -c &#39;cd /u...&#34;   2 minutes ago       Up 2 minutes        80/tcp, 443/tcp     vigorous_swirles
+</code></pre><p>// how to execute &rsquo;echo &ldquo;hello from alpine&rdquo;&rsquo; command</p>
+<pre tabindex="0"><code>$ docker run alpine echo &#34;hello from alpine&#34;
 </code></pre><p>// run docker container and hook up to its shell console, using -it option &lsquo;interactive terminal&rsquo;</p>
-<pre><code>$ docker run -it alpine /bin/sh
+<pre tabindex="0"><code>$ docker run -it alpine /bin/sh
 </code></pre><h2 id="here-is-how-to-start-a-static-website-as-container">Here is how to start a static website as container</h2>
 <p>// Run a static website in a container. this command uses -d option to run with detached mode
 // run does the pull from DockerHub if the image is not locally found.</p>
-<pre><code>$ docker run -d dockersamples/static-site
+<pre tabindex="0"><code>$ docker run -d dockersamples/static-site
 </code></pre><p>// to get the details of running contatier</p>
-<pre><code>$ docker inspect &lt;&lt;container_id&gt;&gt;
+<pre tabindex="0"><code>$ docker inspect &lt;&lt;container_id&gt;&gt;
 ex: $ docker inspect 55bb9c2b85305b5674a37098a68f5cb7459f16ff505d332ad48b52a2a398508d
 </code></pre><p>// to stop the container by name</p>
-<pre><code>$ docker stop &lt;&lt;container_name&gt;&gt;
+<pre tabindex="0"><code>$ docker stop &lt;&lt;container_name&gt;&gt;
 ex: $ docker stop vigorous_swirles
 </code></pre><p>// To stop the container by container ID</p>
-<pre><code>$ docker stop &lt;&lt;container_id&gt;&gt;
+<pre tabindex="0"><code>$ docker stop &lt;&lt;container_id&gt;&gt;
 ex: $ docker stop  55bb9c2b8530
 </code></pre><p>// to start a stopped container by name</p>
-<pre><code>$ docker start &lt;&lt;container_name&gt;&gt;
+<pre tabindex="0"><code>$ docker start &lt;&lt;container_name&gt;&gt;
 ex: docker start vigorous_swirles
 </code></pre><p>// to remove a stopped container</p>
-<pre><code>$ docker rm &lt;&lt;container_name&gt;&gt;
+<pre tabindex="0"><code>$ docker rm &lt;&lt;container_name&gt;&gt;
 ex: $ docker rm vigorous_swirles
 </code></pre><h2 id="how-to-give-a-name-to-assign-default-ports-and-pass-environment-variables-to-a-container">How to give a name, to assign default ports and pass environment variables to a container?</h2>
 <p>// To run a named container in detached mode and passing environment variable for &lsquo;AUTHOR&rsquo; and accessed through default ports.</p>
-<pre><code>$ docker run --name &quot;static-site&quot; -d -P -e AUTHOR=&quot;Van&quot; dockersamples/static-site
+<pre tabindex="0"><code>$ docker run --name &#34;static-site&#34; -d -P -e AUTHOR=&#34;Van&#34; dockersamples/static-site
 </code></pre><p>// to see in which ports the container is using</p>
-<pre><code>$ docker port &lt;&lt;container_name&gt;&gt;
+<pre tabindex="0"><code>$ docker port &lt;&lt;container_name&gt;&gt;
 ex: $ docker port static-site
 </code></pre><p>// to make a container run in specific ports: host uses 8888, continer uses 80
 // goto browser and enter with localhost &ndash;&gt; http://localhost:8888
 // if container&rsquo;s IP is 172.17.0.3 , then in browser &ndash;&gt; http://172.17.0.3:80
 // this will display the site.</p>
-<pre><code>$ docker run --name &quot;site-2&quot; -d -p 8888:80 -e AUTHOR=&quot;bagsub&quot; dockersamples/static-site
+<pre tabindex="0"><code>$ docker run --name &#34;site-2&#34; -d -p 8888:80 -e AUTHOR=&#34;bagsub&#34; dockersamples/static-site
 </code></pre><h2 id="to-remove">To Remove</h2>
 <p>// to force remove : stop and remove the container</p>
-<pre><code>$ docker rm -f &lt;&lt;container_name&gt;&gt;
+<pre tabindex="0"><code>$ docker rm -f &lt;&lt;container_name&gt;&gt;
 
 ex: docker rm -f site-2
 </code></pre><h2 id="to-list-containers">To List containers</h2>
 <p>// to list all docker images found locally</p>
-<pre><code>$ docker images
+<pre tabindex="0"><code>$ docker images
 </code></pre><p>// to list all docker images that starts with &lsquo;v&rsquo; character</p>
-<pre><code>$ docker images &quot;v*&quot;
+<pre tabindex="0"><code>$ docker images &#34;v*&#34;
 </code></pre><h2 id="to-pull-and-search-images">To pull and search images</h2>
 <p>// To pull an image Ubuntu with a tag version 12.04
-// if tag version not specified then &lsquo;latest&rsquo; tag value is used</p>
-<pre><code>$ docker pull ubuntu:12.04
+// if tag version not specified then &rsquo;latest&rsquo; tag value is used</p>
+<pre tabindex="0"><code>$ docker pull ubuntu:12.04
 </code></pre><p>// to search a python container, both locally and remote
 // you will have details about all the containers available</p>
-<pre><code>$ docker search python
+<pre tabindex="0"><code>$ docker search python
 </code></pre><h2 id="how-to-create-push-and-run-your-own-image-as-a-container">How to Create, Push and Run your own Image as a container?</h2>
 <p>Please refer to the <a href="https://vanchin.blogspot.sg/2018/03/how-to-create-push-and-run-your-own.html"> link </a></p>
 <h2 id="how-to-run-a-specific-command-in-the-docker-container">How to run a specific command in the docker container?</h2>
 <p>This command shows how to override the entry point defined in the image. This command would override the default entry point configured in the Dockerfile with &ldquo;bin/ls&rdquo; and the parameters to this command follows after the image name.</p>
-<pre><code>$ docker run --entrypoint /bin/ls  vlvanchin/general -ls /
+<pre tabindex="0"><code>$ docker run --entrypoint /bin/ls  vlvanchin/general -ls /
 </code></pre>
 </div>
 
@@ -231,9 +231,9 @@ ex: docker rm -f site-2
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/docker/">docker</a>, 
+                <a href="/tags/docker/">docker</a>, 
             
-                <a href="/vanblog/tags/development/">development</a>
+                <a href="/tags/development/">development</a>
             
         </p>
     

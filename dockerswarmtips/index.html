@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in Docker Swarm">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Docker Swarm">
@@ -154,25 +154,25 @@
 
     <h1 id="docker-swarm">Docker Swarm</h1>
 <h3 id="to-initialize-swarm">to initialize Swarm</h3>
-<pre><code>$ docker swarm init
+<pre tabindex="0"><code>$ docker swarm init
 or 
 $ docker swarm init --advertise-addr $(hostname -i)
 </code></pre><h3 id="to-join-as-a-worker-node">to join as a worker node</h3>
 <p>from the above init command the manager node is configured and there would be two commands listed, one to join as a worker node and other to join as another manager node.</p>
-<pre><code>$ docker swarm join --token &lt;xxxxx-x-xxx...&gt; &lt;host&gt;
+<pre tabindex="0"><code>$ docker swarm join --token &lt;xxxxx-x-xxx...&gt; &lt;host&gt;
 </code></pre><h3 id="to-show-the-list-of-nodes-in-action">to show the list of nodes in action</h3>
 <p>this will show the active nodes and the <em>Leader</em> node</p>
-<pre><code>$ docker node ls
+<pre tabindex="0"><code>$ docker node ls
 </code></pre><h3 id="how-to-deploy-a-stack-of-docker-services">how to deploy a stack of docker services</h3>
 <p>// this accepts docker-compose format file for configurations</p>
-<pre><code>$ docker stack deploy
+<pre tabindex="0"><code>$ docker stack deploy
 ex: $ docker stack deploy --compose-file docker-stack.yml vote
 </code></pre><p>// how to verify the stack has been deployed.</p>
-<pre><code>$ docker stack ls
+<pre tabindex="0"><code>$ docker stack ls
 </code></pre><p>// to get details of each service within the stack</p>
-<pre><code>$ docker stack services vote
+<pre tabindex="0"><code>$ docker stack services vote
 </code></pre><p>The above command&rsquo;s output might be as follows:</p>
-<pre><code>ID                  NAME                      MODE                REPLICAS            IMAGE                                          PORTS
+<pre tabindex="0"><code>ID                  NAME                      MODE                REPLICAS            IMAGE                                          PORTS
 050tqzdi1f5y        voting_stack_redis        replicated          1/1                 redis:alpine
 bw8wb1gk81vh        voting_stack_db           replicated          1/1                 postgres:9.4
 e43khvw4fqp6        voting_stack_result       replicated          1/1                 dockersamples/examplevotingapp_result:before   *:5001-&gt;80/tcp
@@ -180,25 +180,25 @@ klh2z7ogg1pj        voting_stack_worker       replicated          1/1           
 v396yxpzss2x        voting_stack_vote         replicated          2/2                 dockersamples/examplevotingapp_vote:before     *:5000-&gt;80/tcp
 vg8wvp7dmh35        voting_stack_visualizer   replicated          1/1                 dockersamples/visualizer:stable                *:8080-&gt;8080/tcp
 </code></pre><h3 id="to-list-all-the-tasks-of-a-service-that-has-many-replicas">to list all the tasks of a service that has many replicas</h3>
-<pre><code>$ docker service ps voting_stack_vote
+<pre tabindex="0"><code>$ docker service ps voting_stack_vote
 </code></pre><p>The output of this above command</p>
-<pre><code>ID                  NAME                  IMAGE                                        NODE                DESIRED STATE       CURRENT STATEERROR               PORTS
+<pre tabindex="0"><code>ID                  NAME                  IMAGE                                        NODE                DESIRED STATE       CURRENT STATEERROR               PORTS
 vvyl6ftqgq19        voting_stack_vote.1   dockersamples/examplevotingapp_vote:before   node1               Running             Running 17 minutes ago
 pk1m9lrrpc67        voting_stack_vote.2   dockersamples/examplevotingapp_vote:before   node2               Running             Running 17 minutes ago
 </code></pre><h3 id="test-run">Test Run</h3>
 <p>http://localhost:5000
 otherwise: http://127.0.0.1:5000</p>
 <p>if you are trying this in AWS or Azure or any cloud, then try to port forward the request, using the following</p>
-<pre><code>$ ssh -L &lt;port&gt;:localhost:&lt;port&gt; &lt;ssh-user&gt;@&lt;CLOUD_INSTANCE_IP_ADDRESS&gt;
+<pre tabindex="0"><code>$ ssh -L &lt;port&gt;:localhost:&lt;port&gt; &lt;ssh-user&gt;@&lt;CLOUD_INSTANCE_IP_ADDRESS&gt;
 </code></pre><h3 id="app-customization">App Customization</h3>
 <p>Change in the docker-stack.yml file to Java and .Net instead of Cats and Dogs and from before to after tags.</p>
 <p>Redeploy the services:
 here the redeploy is same as the deployment. so we run the deploy command once again</p>
-<pre><code>  $ docker stack deploy --compose-file docker-stack.yml vote
+<pre tabindex="0"><code>  $ docker stack deploy --compose-file docker-stack.yml vote
 </code></pre><p>// to increase the number of replicas of the voting_stack_vote service</p>
-<pre><code>$ docker service scale voting_stack_vote=5
+<pre tabindex="0"><code>$ docker service scale voting_stack_vote=5
 </code></pre><h3 id="remove-the-stack">Remove the stack</h3>
-<pre><code>$ docker stack rm &lt;stack_name&gt;
+<pre tabindex="0"><code>$ docker stack rm &lt;stack_name&gt;
 ex: $ docker stack rm vote
 </code></pre>
 </div>
@@ -209,11 +209,11 @@ ex: $ docker stack rm vote
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/docker/">docker</a>, 
+                <a href="/tags/docker/">docker</a>, 
             
-                <a href="/vanblog/tags/swarm/">swarm</a>, 
+                <a href="/tags/swarm/">swarm</a>, 
             
-                <a href="/vanblog/tags/development/">development</a>
+                <a href="/tags/development/">development</a>
             
         </p>
     

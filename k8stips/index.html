@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in Kubernetes">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="K8s">
@@ -158,11 +158,11 @@
 <ul>
 <li>On Ubuntu</li>
 </ul>
-<pre><code> $ sudo snap install kubectl --classic
+<pre tabindex="0"><code> $ sudo snap install kubectl --classic
 </code></pre><h2 id="to-test-kubectl-try-the-following">To test <em>kubectl</em> try the following</h2>
-<pre><code> $ kubectl version
+<pre tabindex="0"><code> $ kubectl version
 </code></pre><p>the output would be as follows:</p>
-<pre><code>Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;11&quot;, GitVersion:&quot;v1.11.0&quot;, GitCommit:&quot;91e7b4fd3c980becec37ceefe&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-06-27T20:17:28Z&quot;, GoVersion:&quot;go1.10.2&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+<pre tabindex="0"><code>Client Version: version.Info{Major:&#34;1&#34;, Minor:&#34;11&#34;, GitVersion:&#34;v1.11.0&#34;, GitCommit:&#34;91e7b4fd3c980becec37ceefe&#34;, GitTreeState:&#34;clean&#34;, BuildDate:&#34;2018-06-27T20:17:28Z&#34;, GoVersion:&#34;go1.10.2&#34;, Compiler:&#34;gc&#34;, Platform:&#34;linux/amd64&#34;}
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 </code></pre><p>If your output is like above then it means that there is no cluster up and running. To fix this problem., install MiniKube. Please follow the next steps</p>
 <h1 id="install-minikube-in-ubuntu">Install <em>MiniKube</em> in Ubuntu</h1>
@@ -175,20 +175,20 @@ The connection to the server localhost:8080 was refused - did you specify the ri
 <p>to get the latest of the MiniKube binary</p>
 </li>
 </ul>
-<pre><code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+<pre tabindex="0"><code>curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 </code></pre><ul>
 <li>to put minikube as executable</li>
 </ul>
-<pre><code>$ chmod +x minikube
+<pre tabindex="0"><code>$ chmod +x minikube
 </code></pre><ul>
 <li>to put <em>minikube</em> in your path</li>
 </ul>
-<pre><code>$ sudo mv minikube /usr/local/bin/
+<pre tabindex="0"><code>$ sudo mv minikube /usr/local/bin/
 </code></pre><h1 id="is-minikube-installed">Is MiniKube installed?</h1>
 <ul>
 <li>To test if minikube is install and running</li>
 </ul>
-<pre><code>$ minikube Version
+<pre tabindex="0"><code>$ minikube Version
 </code></pre><ul>
 <li>Still you would not be able to have the <em>kubectl version</em> working, as the cluster is not up yet.</li>
 </ul>
@@ -196,10 +196,10 @@ The connection to the server localhost:8080 was refused - did you specify the ri
 <ul>
 <li>To start a cluster through the <em>minikube</em> we need to have KVM or VM installed. But if we want to run the cluster without any vm-driver for testing purpose, we can do as follows.</li>
 </ul>
-<pre><code>$ minikube start --vm-driver=none
+<pre tabindex="0"><code>$ minikube start --vm-driver=none
 </code></pre><p>&ndash; if the above command throws any permission error then try the above code in <em>sudo</em></p>
-<pre><code>WARNING: IT IS RECOMMENDED NOT TO RUN THE NONE DRIVER ON PERSONAL WORKSTATIONS
-	The 'none' driver will run an insecure kubernetes apiserver as root that may leave the host vulnerable to CSRF attacks
+<pre tabindex="0"><code>WARNING: IT IS RECOMMENDED NOT TO RUN THE NONE DRIVER ON PERSONAL WORKSTATIONS
+	The &#39;none&#39; driver will run an insecure kubernetes apiserver as root that may leave the host vulnerable to CSRF attacks
 
 When using the none driver, the kubectl config and credentials generated will be root owned and will appear in the root home directory.
 You will need to move the files to the appropriate location and then set the correct permissions.  An example of this is below:
@@ -216,13 +216,13 @@ This can also be done automatically by setting the env var CHANGE_MINIKUBE_NONE_
 </code></pre><ul>
 <li>Now run the following <em>kubectl version</em>, it will get the clint and server configuration.</li>
 </ul>
-<pre><code>Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;11&quot;, GitVersion:&quot;v1.11.0&quot;, GitCommit:&quot;91e7b4fd31fcd3dcec37ceefe&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-06-27T20:17:28Z&quot;, GoVersion:&quot;go1.10.2&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
-Server Version: version.Info{Major:&quot;1&quot;, Minor:&quot;10&quot;, GitVersion:&quot;v1.10.0&quot;, GitCommit:&quot;fc32d2f3698e36e9f0eaead&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-03-26T16:44:10Z&quot;, GoVersion:&quot;go1.9.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
+<pre tabindex="0"><code>Client Version: version.Info{Major:&#34;1&#34;, Minor:&#34;11&#34;, GitVersion:&#34;v1.11.0&#34;, GitCommit:&#34;91e7b4fd31fcd3dcec37ceefe&#34;, GitTreeState:&#34;clean&#34;, BuildDate:&#34;2018-06-27T20:17:28Z&#34;, GoVersion:&#34;go1.10.2&#34;, Compiler:&#34;gc&#34;, Platform:&#34;linux/amd64&#34;}
+Server Version: version.Info{Major:&#34;1&#34;, Minor:&#34;10&#34;, GitVersion:&#34;v1.10.0&#34;, GitCommit:&#34;fc32d2f3698e36e9f0eaead&#34;, GitTreeState:&#34;clean&#34;, BuildDate:&#34;2018-03-26T16:44:10Z&#34;, GoVersion:&#34;go1.9.3&#34;, Compiler:&#34;gc&#34;, Platform:&#34;linux/amd64&#34;}
 </code></pre><h1 id="how-to-stop-the-cluster">How to stop the cluster?</h1>
 <ul>
 <li>Run the following command</li>
 </ul>
-<pre><code>$ sudo minikube stop
+<pre tabindex="0"><code>$ sudo minikube stop
 </code></pre>
 </div>
 
@@ -232,9 +232,9 @@ Server Version: version.Info{Major:&quot;1&quot;, Minor:&quot;10&quot;, GitVersi
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/k8s/">k8s</a>, 
+                <a href="/tags/k8s/">k8s</a>, 
             
-                <a href="/vanblog/tags/development/">development</a>
+                <a href="/tags/development/">development</a>
             
         </p>
     

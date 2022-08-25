@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in Webservice">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Webservice">
@@ -153,15 +153,15 @@
     
 
     <h1 id="jax-ws-using-soap-and-wsdl">jax-ws using soap and wsdl</h1>
-<pre><code>&gt; mkdir -p helloservice/endpoint/
+<pre tabindex="0"><code>&gt; mkdir -p helloservice/endpoint/
 &gt; mkdir build
 &gt; javac -d build helloservice/endpoint/*java
 &gt; C:\dev\ides\eclipse\workspace\attachmentws&gt;wsgen -d build -s build -cp c:\dev\ides\eclipse\workspace\attachmentws\build helloservice.endpoint.Hello
 &gt; java -cp  build helloservice.endpoint.Server
 </code></pre><h1 id="this-is-to-generated-web-service-classes-for-the-service-and-wsdl-and-xsd">This is to generated web service classes for the service and WSDL and XSD</h1>
-<pre><code>C:\dev\ides\eclipse\workspace\FileAttachmentExample&gt;wsgen -d bin -s bin -wsdl -cp c:\dev\ides\eclipse\workspace\FileAttachmentExample\bin com.company.jira.services.ws.attach.server.FileTransferImpl
+<pre tabindex="0"><code>C:\dev\ides\eclipse\workspace\FileAttachmentExample&gt;wsgen -d bin -s bin -wsdl -cp c:\dev\ides\eclipse\workspace\FileAttachmentExample\bin com.company.jira.services.ws.attach.server.FileTransferImpl
 </code></pre><h1 id="this-is-to-generate-web-service-classes-for-the-client-based-on-the-wsdl-from-the-localhost">This is to generate web service classes for the client based on the WSDL from the localhost</h1>
-<pre><code>wsimport -keep -p net.codejava.ws.binary.client http://localhost:9898/codejava/fileService?wsdl
+<pre tabindex="0"><code>wsimport -keep -p net.codejava.ws.binary.client http://localhost:9898/codejava/fileService?wsdl
 </code></pre>
 </div>
 
@@ -171,9 +171,9 @@
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/webservice/">webservice</a>, 
+                <a href="/tags/webservice/">webservice</a>, 
             
-                <a href="/vanblog/tags/development/">development</a>
+                <a href="/tags/development/">development</a>
             
         </p>
     

@@ -7,7 +7,7 @@
         <meta name="description" content="This page shows some basic commands used in s3">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="AWS s3">
@@ -156,23 +156,23 @@
 <p>This page gives some tips on how to manage the files and buckets in S3</p>
 <h2 id="to-list-all-the-buckets-folders">To list all the buckets (folders)</h2>
 <p>To get help for s3 command</p>
-<pre><code>$ aws s3 help
+<pre tabindex="0"><code>$ aws s3 help
 </code></pre><p>Try to run the following</p>
-<pre><code>$ aws s3 ls
+<pre tabindex="0"><code>$ aws s3 ls
 </code></pre><p>to list all the buckets using a specific profile</p>
-<pre><code>$ aws s3 --profile ${profile_name} ls
+<pre tabindex="0"><code>$ aws s3 --profile ${profile_name} ls
 </code></pre><p>to list all the files in a specific bucket; say <em>test_bucket</em></p>
-<pre><code>$ aws s3 ls s3://test_bucket
+<pre tabindex="0"><code>$ aws s3 ls s3://test_bucket
 </code></pre><p>to list all the files in a specific bucket with a prefix <em>get</em></p>
-<pre><code>$ aws s3 ls s3://test_bucket/get
+<pre tabindex="0"><code>$ aws s3 ls s3://test_bucket/get
 </code></pre><p>to delete a file with prefix</p>
-<pre><code>$ aws s3 rm s3://test_bucket/${file_name}
+<pre tabindex="0"><code>$ aws s3 rm s3://test_bucket/${file_name}
 </code></pre><p>to delete all files in a bucket</p>
-<pre><code>$ aws s3 rm s3://${bucket_name}
+<pre tabindex="0"><code>$ aws s3 rm s3://${bucket_name}
 </code></pre><p>to delete all files in a bucket using a specific profile</p>
-<pre><code>$ aws s3 --profile ${profile_name} rm s3://${bucket_name}
+<pre tabindex="0"><code>$ aws s3 --profile ${profile_name} rm s3://${bucket_name}
 </code></pre><p>to delete a bucket</p>
-<pre><code>$ aws s3 rb s3://${bucket_name}
+<pre tabindex="0"><code>$ aws s3 rb s3://${bucket_name}
 </code></pre>
 </div>
 
@@ -182,11 +182,11 @@
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/aws/">aws</a>, 
+                <a href="/tags/aws/">aws</a>, 
             
-                <a href="/vanblog/tags/s3/">s3</a>, 
+                <a href="/tags/s3/">s3</a>, 
             
-                <a href="/vanblog/tags/aws-s3/">aws-s3</a>
+                <a href="/tags/aws-s3/">aws-s3</a>
             
         </p>
     

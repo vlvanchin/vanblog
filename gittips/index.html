@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in GIT">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="GIT">
@@ -153,7 +153,7 @@
     
 
     <h1 id="delete-branch-locally-and-remotely">Delete branch locally and remotely:</h1>
-<pre><code>// to delete a local branch
+<pre tabindex="0"><code>// to delete a local branch
 $ git branch --delete &lt;&lt;local_branch&gt;&gt;
 or
 $ git branch -d &lt;&lt;local_branch&gt;&gt;
@@ -167,7 +167,7 @@ $ git branch --dr &lt;&lt;remote&gt;&gt;/&lt;&lt;branch-name&gt;&gt;
 // to delete a remote branch
 $ git push --delete &lt;&lt;remote&gt;&gt; &lt;&lt;branch-name&gt;&gt;
 </code></pre><h1 id="cherry-pick-commits">Cherry-pick commits:</h1>
-<pre><code>* find the common parent as the inital state
+<pre tabindex="0"><code>* find the common parent as the inital state
 * $ git checkout -b &lt;&lt;cherry-pick-branch-name&gt;&gt; &lt;&lt;initial-commit-id&gt;&gt; // create a new branch for cherry-pick
 * $ git cherry-pick &lt;&lt;commit-id-wanted&gt;&gt; // select the commit that you want
 * Fix any conflicts that arrise
@@ -175,33 +175,33 @@ $ git push --delete &lt;&lt;remote&gt;&gt; &lt;&lt;branch-name&gt;&gt;
 * git push &lt;&lt;remote&gt;&gt; &lt;&lt;cherry-pick-branch-name&gt;&gt;
 </code></pre><h1 id="other-useful-commands">Other useful commands:</h1>
 <h3 id="how-to-restore-the-modified-file-contents-from-the-remote-git">how to restore the modified file contents from the remote Git</h3>
-<pre><code>$ git restore &lt;filename&gt; 
+<pre tabindex="0"><code>$ git restore &lt;filename&gt; 
 </code></pre><h3 id="how-to-view-logs-for-a-specific-branch">how to view logs for a specific branch</h3>
-<pre><code>$ git log --oneline --decorate &lt;branch&gt;
+<pre tabindex="0"><code>$ git log --oneline --decorate &lt;branch&gt;
 </code></pre><h3 id="to-show-all-the-names-of-the-files-committed-in-this-commit">to show all the names of the files committed in this commit</h3>
-<pre><code>$ git show  --name-only &lt;commit-id&gt;
+<pre tabindex="0"><code>$ git show  --name-only &lt;commit-id&gt;
 </code></pre><h3 id="to-list-the-last-5-logs-of-a-specific-file">to list the last 5 logs of a specific file</h3>
-<pre><code>$ git log -5 --follow &lt;file-path&gt;
+<pre tabindex="0"><code>$ git log -5 --follow &lt;file-path&gt;
 </code></pre><h3 id="to-checkout-a-specific-commit-of-a-specific-file">to checkout a specific commit of a specific file</h3>
-<pre><code>$ git checkout &lt;commit-id&gt; -- &lt;file-path&gt;
+<pre tabindex="0"><code>$ git checkout &lt;commit-id&gt; -- &lt;file-path&gt;
 </code></pre><h3 id="reset-a-file-from-staged-to-work-area">reset a file from staged to work area</h3>
-<pre><code>$ git reset HEAD &lt;file-path&gt;
+<pre tabindex="0"><code>$ git reset HEAD &lt;file-path&gt;
 </code></pre><h3 id="to-show-differences-of-a-staged-file">to show differences of a staged file</h3>
-<pre><code>$ git diff --cached &lt;file-path&gt;
+<pre tabindex="0"><code>$ git diff --cached &lt;file-path&gt;
 </code></pre><h3 id="to-show-differences-of-a-file-within-an-old-and-new-commits">to show differences of a file within an old and new commits</h3>
-<pre><code>$ git diff &lt;old-commit-id&gt; &lt;new-commit-id&gt; &lt;file-path&gt;
+<pre tabindex="0"><code>$ git diff &lt;old-commit-id&gt; &lt;new-commit-id&gt; &lt;file-path&gt;
 </code></pre><h3 id="to-stash-modified-files-except-the-staged">to stash modified files except the staged</h3>
-<pre><code>$ git stash save --keep-index
+<pre tabindex="0"><code>$ git stash save --keep-index
 </code></pre><h3 id="to-add-a-file-based-on-individual-changes-in-that-file-interactive-mode">to add a file based on individual changes in that file, interactive mode</h3>
-<pre><code>$ git add --patch &lt;file-path&gt;
+<pre tabindex="0"><code>$ git add --patch &lt;file-path&gt;
 </code></pre><h2 id="how-to-reset-last-commit-in-local-and-remote">How to reset last commit in local and remote:</h2>
-<pre><code>* reset head softly locally first
+<pre tabindex="0"><code>* reset head softly locally first
 $ git reset HEAD~1
 
 * push forcefully to remote repo
 $ git push &lt;&lt;remote&gt;&gt; &lt;&lt;branch&gt;&gt; -f
 </code></pre><h2 id="how-to-list-all-different-commits-between-two-branches-in-a-repo">How to list all different commits between two Branches in a Repo</h2>
-<pre><code># To list right-only branch commits that are not in the develop (left branch)
+<pre tabindex="0"><code># To list right-only branch commits that are not in the develop (left branch)
 $ git log --cherry-pick --right-only --no-merges develop...master 
 
 # To list left-only branch commits that are not in the master (right branch)
@@ -210,20 +210,20 @@ $ git log --cherry-pick --left-only --no-merges develop...master
 <h2 id="basis-commands-for-tags">Basis commands for Tags</h2>
 <p>This shows command to list, create, push to remote, delete locally and in remote</p>
 <h3 id="to-list-all-tags">To list all tags</h3>
-<pre><code>$ git tag
+<pre tabindex="0"><code>$ git tag
 </code></pre><h3 id="to-create-a-tag-with-anotate-and-with-message">to create a tag with anotate and with message</h3>
-<pre><code>$ git tag -a ${tag_name} -m &quot;enter the message for this tag&quot;
+<pre tabindex="0"><code>$ git tag -a ${tag_name} -m &#34;enter the message for this tag&#34;
 </code></pre><h3 id="to-push-a-tag-to-remote-repository">to push a tag to remote repository</h3>
-<pre><code>$ git push origin ${tag_name}
+<pre tabindex="0"><code>$ git push origin ${tag_name}
 </code></pre><h3 id="to-show-the-details-of-a-tag">to show the details of a tag</h3>
-<pre><code>$ git show ${tag_name}
+<pre tabindex="0"><code>$ git show ${tag_name}
 </code></pre><h3 id="to-deleteremove-a-tag">to delete/remove a tag</h3>
-<pre><code>$ git tag --delete ${tag_name}
+<pre tabindex="0"><code>$ git tag --delete ${tag_name}
 </code></pre><h3 id="to-deleteremove-a-tag-in-the-remote-repo">to delete/remove a tag in the remote repo</h3>
-<pre><code>$ git push origin --delete ${tag_name}
+<pre tabindex="0"><code>$ git push origin --delete ${tag_name}
 </code></pre><hr>
 <h2 id="how-to-merge-a-tag-in-a-branch-to-another-branch">How to merge a Tag in a branch to another branch</h2>
-<pre><code># change dir to the destination branch
+<pre tabindex="0"><code># change dir to the destination branch
 $ git checkout &lt;destination_branch&gt;
 
 # fetch the tags from the remote
@@ -232,11 +232,11 @@ $ git fetch --tags origin
 # do merge tag
 $ git merge &lt;tag_name&gt;
 </code></pre><h2 id="how-to-get-log-based-on-filters">How to get log based on filters</h2>
-<pre><code>// fetch commits based on commit messages
-git log --all --oneline --decorate --grep &quot;message&quot;
+<pre tabindex="0"><code>// fetch commits based on commit messages
+git log --all --oneline --decorate --grep &#34;message&#34;
 
 // fetch commits based on author and commit message
-git log --oneline --author=&quot;authorName&quot; --grep &quot;messageStr&quot;
+git log --oneline --author=&#34;authorName&#34; --grep &#34;messageStr&#34;
 
 // to display all the files for a specific commit id
 git show --name-only f2c06ff6
@@ -245,7 +245,7 @@ git show --name-only f2c06ff6
 git show -p &lt;commit-id&gt; -- &lt;filename&gt;
 
 // to display all commit ids along with author name
-git log --format='%H %an'
+git log --format=&#39;%H %an&#39;
 </code></pre>
 </div>
 
@@ -255,9 +255,9 @@ git log --format='%H %an'
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/git/">git</a>, 
+                <a href="/tags/git/">git</a>, 
             
-                <a href="/vanblog/tags/development/">development</a>
+                <a href="/tags/development/">development</a>
             
         </p>
     

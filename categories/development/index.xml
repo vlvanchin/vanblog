@@ -22,7 +22,7 @@
       
       <guid>/vanblog/shelltips/</guid>
       <description>Some commands that benifit you How to search text in folder and sub-folders // to search &amp;ldquo;httpclient&amp;rdquo; text in current and subfolders // -r is recursive and -l to list the file along with path.
-$ grep -rl &amp;quot;httpclient&amp;quot; ./ Commands for Vimdiff // to jump to the next/previous difference
+$ grep -rl &amp;#34;httpclient&amp;#34; ./ Commands for Vimdiff // to jump to the next/previous difference
 ]c : - next difference [c : - previous difference // to bringing difference from other file to current file</description>
     </item>
     
@@ -33,8 +33,8 @@ $ grep -rl &amp;quot;httpclient&amp;quot; ./ Commands for Vimdiff // to jump to 
       
       <guid>/vanblog/k8stips/</guid>
       <description>Kubernetes Tips: Selfhelp page to test and learn about Kubernetes.
-Install kubectl that CLI to access and control cluster.  On Ubuntu   $ sudo snap install kubectl --classic To test kubectl try the following  $ kubectl version the output would be as follows:
-Client Version: version.Info{Major:&amp;quot;1&amp;quot;, Minor:&amp;quot;11&amp;quot;, GitVersion:&amp;quot;v1.11.0&amp;quot;, GitCommit:&amp;quot;91e7b4fd3c980becec37ceefe&amp;quot;, GitTreeState:&amp;quot;clean&amp;quot;, BuildDate:&amp;quot;2018-06-27T20:17:28Z&amp;quot;, GoVersion:&amp;quot;go1.10.2&amp;quot;, Compiler:&amp;quot;gc&amp;quot;, Platform:&amp;quot;linux/amd64&amp;quot;} The connection to the server localhost:8080 was refused - did you specify the right host or port?</description>
+Install kubectl that CLI to access and control cluster. On Ubuntu $ sudo snap install kubectl --classic To test kubectl try the following $ kubectl version the output would be as follows:
+Client Version: version.Info{Major:&amp;#34;1&amp;#34;, Minor:&amp;#34;11&amp;#34;, GitVersion:&amp;#34;v1.11.0&amp;#34;, GitCommit:&amp;#34;91e7b4fd3c980becec37ceefe&amp;#34;, GitTreeState:&amp;#34;clean&amp;#34;, BuildDate:&amp;#34;2018-06-27T20:17:28Z&amp;#34;, GoVersion:&amp;#34;go1.10.2&amp;#34;, Compiler:&amp;#34;gc&amp;#34;, Platform:&amp;#34;linux/amd64&amp;#34;} The connection to the server localhost:8080 was refused - did you specify the right host or port? If your output is like above then it means that there is no cluster up and running.</description>
     </item>
     
     <item>
@@ -55,8 +55,9 @@ $ javac -classpath ./src ./src/com/van/Demo.java -d ./bin</description>
       
       <guid>/vanblog/faq/</guid>
       <description>How to fix the miss commits between the two branches in two separate repositories? Steps to be done to fix the miss commits between the two branches say the development branch in origin and upstream remotes.
- Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
- $ git checkout -b commonCommitBranch 2449134b726f723fa  update both the remotes</description>
+Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
+$ git checkout -b commonCommitBranch 2449134b726f723fa update both the remotes
+$ git fetch upstream $ git fetch origin now rebase from the upstream branch to the working branch</description>
     </item>
     
     <item>
@@ -66,7 +67,7 @@ $ javac -classpath ./src ./src/com/van/Demo.java -d ./bin</description>
       
       <guid>/vanblog/dockertips/</guid>
       <description>Docker Commands: Here are a few basic commands used in Docker // To pull a image &amp;lsquo;alpine&amp;rsquo; from docker registry. note to be logged in DockerHub site.
-$ docker pull alpine // run docker container and execute &amp;lsquo;ls -l&amp;rsquo; command
+$ docker pull alpine // run docker container and execute &amp;rsquo;ls -l&amp;rsquo; command
 $ docker run alpine ls -l // view all docker containers
 $ docker ps -a // view all docker containers currently running
 $ docker ps The above command gives the following:</description>

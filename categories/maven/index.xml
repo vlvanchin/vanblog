@@ -14,10 +14,10 @@
       <guid>/vanblog/maven/</guid>
       <description>Maven Examples This page shows some useful commands of Maven tool
 Maven Phases Here are the list of Phases in the maven lifecycle
- validate compile test package integration-test verify install deploy
- other phases are
- clean site
- Most of the phases have many steps or processes within., example: package
+validate compile test package integration-test verify install deploy
+other phases are
+clean site
+Most of the phases have many steps or processes within., example: package
 1. validate 2. generate-sources 3. process-sources 4. generate-resources 5. process-resources 6. compile Maven Archetypes Here are some of the useful commands of Archetypes</description>
     </item>
     

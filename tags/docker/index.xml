@@ -13,7 +13,7 @@
       
       <guid>/vanblog/dockertips/</guid>
       <description>Docker Commands: Here are a few basic commands used in Docker // To pull a image &amp;lsquo;alpine&amp;rsquo; from docker registry. note to be logged in DockerHub site.
-$ docker pull alpine // run docker container and execute &amp;lsquo;ls -l&amp;rsquo; command
+$ docker pull alpine // run docker container and execute &amp;rsquo;ls -l&amp;rsquo; command
 $ docker run alpine ls -l // view all docker containers
 $ docker ps -a // view all docker containers currently running
 $ docker ps The above command gives the following:</description>

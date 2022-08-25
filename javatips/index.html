@@ -7,7 +7,7 @@
         <meta name="description" content="This page show some of the most used commands in Java">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Java">
@@ -154,7 +154,7 @@
 
     <h1 id="how-to-run-a-packaged-java-file-from-any-folder">How to run a packaged Java file from any folder</h1>
 <p>Here is the structure of the Java project, were bin is the output folder</p>
-<pre><code>demo
+<pre tabindex="0"><code>demo
 ├─ src
 |   └── com
 |       ├── van
@@ -163,7 +163,7 @@
 </code></pre><p>To compile the Demo.java try the following command from the demo folder that will place the .class file in the package folders within bin folder</p>
 <p><code>$ javac -classpath ./src ./src/com/van/Demo.java -d ./bin</code></p>
 <p>outcome</p>
-<pre><code>demo
+<pre tabindex="0"><code>demo
 ├─ src
 |   └── com
 |       ├── van
@@ -177,14 +177,13 @@
 <p>where cp is the classpath option</p>
 <h1 id="how-to-run-executable-java-jar-files">How to run executable Java Jar files</h1>
 <p>Here we have a sample1 project that shows how to build and execute java programs as a Jar file.</p>
-<pre><code>├─ com
+<pre tabindex="0"><code>├─ com
    └── vlv
        ├── demosample
            └── GetProps.java
-
 </code></pre><p>Above tree structure show the java source and class objects in their package structure.</p>
 <p>Here is the sample code for GetProps.java</p>
-<pre><code>package com.vlv.demosample;
+<pre tabindex="0"><code>package com.vlv.demosample;
 
 
 
@@ -196,32 +195,30 @@ public class GetProps {
 	public static void main (String [] args) {
 		String s;
 		try {
-      System.out.println (&quot;-------------------&quot;);	
-      System.out.println(&quot;os.name value&quot;);
-			s = System.getProperty(&quot;os.name&quot;, &quot;not given&quot;);
-			System.out.println(&quot;os is &quot; + s);
+      System.out.println (&#34;-------------------&#34;);	
+      System.out.println(&#34;os.name value&#34;);
+			s = System.getProperty(&#34;os.name&#34;, &#34;not given&#34;);
+			System.out.println(&#34;os is &#34; + s);
 
-			System.out.println(&quot;about java.version&quot;);
-			s = System.getProperty(&quot;java.version&quot;, &quot;not given&quot;);
-			System.out.println(&quot;java version &quot; + s);
+			System.out.println(&#34;about java.version&#34;);
+			s = System.getProperty(&#34;java.version&#34;, &#34;not given&#34;);
+			System.out.println(&#34;java version &#34; + s);
 
-			System.out.println(&quot;about user home&quot;);
-			s = System.getProperty(&quot;user.home&quot;, &quot;not given&quot;);
-			System.out.println(&quot;user home &quot; + s);
+			System.out.println(&#34;about user home&#34;);
+			s = System.getProperty(&#34;user.home&#34;, &#34;not given&#34;);
+			System.out.println(&#34;user home &#34; + s);
 
-			System.out.println(&quot;about java home&quot;);
-			s = System.getProperty(&quot;java.home&quot;,&quot;not given&quot;);
-			System.out.println(&quot;java home &quot; + s);
+			System.out.println(&#34;about java home&#34;);
+			s = System.getProperty(&#34;java.home&#34;,&#34;not given&#34;);
+			System.out.println(&#34;java home &#34; + s);
 		} catch (Exception e) {
-			System.err.println(&quot;caught exception &quot; + e.toString());
+			System.err.println(&#34;caught exception &#34; + e.toString());
 		}
 	}
 }
-
-</code></pre><pre><code>$ javac com/vlv/demosample/GetProps.java
-
+</code></pre><pre tabindex="0"><code>$ javac com/vlv/demosample/GetProps.java
 </code></pre><p>Run the above command to compile the java code and the structure is like follows:</p>
-<pre><code>├─ com
+<pre tabindex="0"><code>├─ com
    └── vlv
        ├── demosample
            ├── GetProps.class
@@ -230,11 +227,9 @@ public class GetProps {
 </code></pre><p>Now create a manifest file that would specify the Main-Class, which will make the jar an executable one.</p>
 <p>Please refer the contents of the mainfest.txt file : <a href="https://github.com/vlvanchin/testbed/blob/master/java/sample1/manifest.txt">manifest.txt</a></p>
 <p>Now create an executable jar file with the below command:</p>
-<pre><code>$ jar -cvfm showproperties.jar manifest.txt *
-
+<pre tabindex="0"><code>$ jar -cvfm showproperties.jar manifest.txt *
 </code></pre><p>Here is the command to run the <em>showproperties.jar</em></p>
-<pre><code>$ java -jar showproperties.jar
-
+<pre tabindex="0"><code>$ java -jar showproperties.jar
 </code></pre>
 </div>
 
@@ -244,9 +239,9 @@ public class GetProps {
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/java/">java</a>, 
+                <a href="/tags/java/">java</a>, 
             
-                <a href="/vanblog/tags/development/">development</a>
+                <a href="/tags/development/">development</a>
             
         </p>
     

@@ -7,7 +7,7 @@
         <meta name="description" content="This page shows some basic commands used in SSH">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="SSH">
@@ -155,37 +155,37 @@
     <h1 id="ssh-keygen">ssh-keygen</h1>
 <p>This section shows some of the useful commands for Ssh-keygen.</p>
 <h2 id="how-to-generate-ssh-keypair">how to generate ssh keypair</h2>
-<pre><code>$ ssh-keygen // uses all the default to generate the keypair
+<pre tabindex="0"><code>$ ssh-keygen // uses all the default to generate the keypair
 </code></pre><ul>
 <li>to generate with different filename</li>
 </ul>
-<pre><code>$ ssh-keygen -f &lt;filename&gt;
+<pre tabindex="0"><code>$ ssh-keygen -f &lt;filename&gt;
 </code></pre><ul>
 <li>to generate with different type of coding, RSA, DSA</li>
 </ul>
-<pre><code>$ ssh-keygen -t &lt;code type&gt;
+<pre tabindex="0"><code>$ ssh-keygen -t &lt;code type&gt;
 </code></pre><ul>
 <li>to generate with number of bits</li>
 </ul>
-<pre><code>$ ssh-keygen -b 2048
+<pre tabindex="0"><code>$ ssh-keygen -b 2048
 </code></pre><ul>
 <li>to generate with a comment</li>
 </ul>
-<pre><code>$ ssh-keygen -C &lt;comment | email&gt;
+<pre tabindex="0"><code>$ ssh-keygen -C &lt;comment | email&gt;
 </code></pre><ul>
 <li>to generate key pair with new passpharse (empty string)</li>
 </ul>
-<pre><code>$ ssh-keygen -N &quot;&quot; 
+<pre tabindex="0"><code>$ ssh-keygen -N &#34;&#34; 
 </code></pre><ul>
 <li>to generate a key pair in PEM format with comments and save it to a different filename</li>
 </ul>
-<pre><code>$ ssh-keygen -m PEM -C &quot;my special vm&quot; -f my_special_vm.pem
+<pre tabindex="0"><code>$ ssh-keygen -m PEM -C &#34;my special vm&#34; -f my_special_vm.pem
 </code></pre><h2 id="how-to-add-a-passphrase-to-the-existing-keys">how to add a passphrase to the existing keys</h2>
-<pre><code>$ ssh-keygen -p -f &lt;filename&gt;
+<pre tabindex="0"><code>$ ssh-keygen -p -f &lt;filename&gt;
 </code></pre><h2 id="to-list-the-associated-public-key-for-any-private-key">to list the associated public key for any private key</h2>
-<pre><code>$ ssh-keygen -y -f &lt;private-key-filename&gt;
+<pre tabindex="0"><code>$ ssh-keygen -y -f &lt;private-key-filename&gt;
 </code></pre><h2 id="how-to-upload-the-public-key-to-my-special-vm-machine-so-that-i-would-not-be-required-to-key-in-my-credentials-each-time">how to upload the public key to &ldquo;my special vm&rdquo; machine, so that i would not be required to key in my credentials each time</h2>
-<pre><code>$ ssh-keygen -y -f my_special_vm.pem | ssh &lt;username&gt;@&lt;server_domain_name-or-ip_address&gt; 'cat &gt;&gt; ~/.ssh/authorized_keys'
+<pre tabindex="0"><code>$ ssh-keygen -y -f my_special_vm.pem | ssh &lt;username&gt;@&lt;server_domain_name-or-ip_address&gt; &#39;cat &gt;&gt; ~/.ssh/authorized_keys&#39;
 
 or
 
@@ -209,9 +209,9 @@ $ ssh-copy-id -i linux_academy.pem.pub &lt;username&gt;@&lt;server_domain_name-o
 </li>
 </ul>
 <h2 id="to-display-the-contents-of-know_hosts-file">to display the contents of know_hosts file</h2>
-<pre><code>$ ssh-keygen -lv -f known_hosts
+<pre tabindex="0"><code>$ ssh-keygen -lv -f known_hosts
 </code></pre><h2 id="to-hash-the-keys-of-the-known_hosts">to hash the keys of the known_hosts</h2>
-<pre><code>$ ssh-keygen -H -f known_hosts
+<pre tabindex="0"><code>$ ssh-keygen -H -f known_hosts
 </code></pre>
 </div>
 
@@ -221,7 +221,7 @@ $ ssh-copy-id -i linux_academy.pem.pub &lt;username&gt;@&lt;server_domain_name-o
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/ssh/">ssh</a>
+                <a href="/tags/ssh/">ssh</a>
             
         </p>
     

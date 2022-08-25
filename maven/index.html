@@ -7,7 +7,7 @@
         <meta name="description" content="This page shows some basic commands of Maven Tool">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Maven">
@@ -172,7 +172,7 @@ deploy</p>
 site</p>
 </blockquote>
 <p>Most of the phases have many steps or processes within., example: <code>package</code></p>
-<pre><code>1. validate
+<pre tabindex="0"><code>1. validate
 2. generate-sources
 3. process-sources
 4. generate-resources
@@ -182,19 +182,18 @@ site</p>
 <p>Here are some of the useful commands of Archetypes</p>
 <h3 id="generate">:Generate</h3>
 <p>The following command will create a Maven project com.my.app:my-first-app:1.0-SNAPSHOT application using the Generate maven goal., <code>archetype:generate</code></p>
-<pre><code>mvn archetype:generate -DgroupId=com.my.app -DartifactId=my-first-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+<pre tabindex="0"><code>mvn archetype:generate -DgroupId=com.my.app -DartifactId=my-first-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 or
 mvn -B archetype:generate -DgroupId=com.my.app -DartifactId=my-first-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
-
 </code></pre><p>the following command will create a maven project that is a site for the project</p>
-<pre><code>mvn archetype:generate \
+<pre tabindex="0"><code>mvn archetype:generate \
   -DgroupId=com.my.app \
   -DartifactId=my-first-app-site \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DarchetypeArtifactId=maven-archetype-site \
   -DinteractiveMode=false
 </code></pre><p>the following command will create a maven web project</p>
-<pre><code>mvn archetype:generate \
+<pre tabindex="0"><code>mvn archetype:generate \
     -DgroupId=com.my.app \
     -DartifactId=my-webapp \
     -DarchetypeGroupId=org.apache.maven.archetypes \
@@ -202,13 +201,13 @@ mvn -B archetype:generate -DgroupId=com.my.app -DartifactId=my-first-app -Darche
     -DinteractiveMode=false
 </code></pre><h2 id="maven-goals-and-phases-can-be-invoked-in-a-sequence-together">Maven Goals and Phases can be invoked in a sequence together</h2>
 <p>Here is an example to clean the project, copy the dependencies and package the project</p>
-<pre><code>mvn clean dependency:copy-dependencies package
+<pre tabindex="0"><code>mvn clean dependency:copy-dependencies package
 </code></pre><h3 id="maven-package">maven package</h3>
 <p>The following command will create the jar file into the target folder</p>
-<pre><code>mvn package
+<pre tabindex="0"><code>mvn package
 </code></pre><h3 id="execute-the-generated-package">execute the generated package</h3>
 <p>The following command will execute the jar file</p>
-<pre><code>java -cp target/my-first-app-1.0-SNAPSHOT.jar com.my.app.App
+<pre tabindex="0"><code>java -cp target/my-first-app-1.0-SNAPSHOT.jar com.my.app.App
 </code></pre><hr>
 <h1 id="pom-details">POM details</h1>
 <p>Here we will see some of the details of the POM.xml file</p>
@@ -233,9 +232,9 @@ mvn -B archetype:generate -DgroupId=com.my.app -DartifactId=my-first-app -Darche
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/maven/">Maven</a>, 
+                <a href="/tags/maven/">Maven</a>, 
             
-                <a href="/vanblog/tags/mvn/">Mvn</a>
+                <a href="/tags/mvn/">Mvn</a>
             
         </p>
     

@@ -7,7 +7,7 @@
         <meta name="description" content="This page shows some basic commands used in Docker-Compose">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="docker compose">
@@ -156,9 +156,9 @@
 <p>This section shows some of the useful commands for Docker-compose. &hellip; it is a good practice to do compose stuff from a independent folder</p>
 <h2 id="installation-of-docker-compose">installation of docker-compose</h2>
 <p>download and house the app /usr/local/bin</p>
-<pre><code>$ udo curl -L &quot;https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+<pre tabindex="0"><code>$ udo curl -L &#34;https://github.com/docker/compose/releases/download/1.28.4/docker-compose-$(uname -s)-$(uname -m)&#34; -o /usr/local/bin/docker-compose
 </code></pre><p>change the mode of the docker-compose to executable</p>
-<pre><code>chmod +x /usr/local/bin/docker-compose
+<pre tabindex="0"><code>chmod +x /usr/local/bin/docker-compose
 </code></pre><ul>
 <li>check the version of docker-compose using <code>docker-compose version</code></li>
 </ul>
@@ -174,7 +174,7 @@
 <p>create an docker-compose.yml in the project folder</p>
 </li>
 </ul>
-<pre><code>/docker-demo
+<pre tabindex="0"><code>/docker-demo
 |
 |--app
 |    |
@@ -185,52 +185,52 @@
 <li>content of the docker-compose.yml is as follows</li>
 </ul>
 <p>this file uses 3.7 version of the compose syntax, the configuration of services is done below having one <em>web</em> service that uses the image of <em>nginx:alpine</em> as a reverse proxy. The port <em>8000</em> is used from the host system which maps to the port <em>80</em> of the container. The volume for the container is mapped from <em>app</em> folder of host to <em>/usr/share/nginx/html</em> in the container</p>
-<pre><code>version: '3.7'
+<pre tabindex="0"><code>version: &#39;3.7&#39;
 services:
   web:
     image: nginx:alpine
     ports:
-      - &quot;8000:80&quot;
+      - &#34;8000:80&#34;
     volumes:
       - ./app:/usr/share/nginx/html
 </code></pre><h2 id="running-docker-compose">Running docker-compose</h2>
 <ul>
 <li>to test this from the project folder run the following command</li>
 </ul>
-<pre><code>$ docker-compose up -d
+<pre tabindex="0"><code>$ docker-compose up -d
 </code></pre><ul>
 <li>to view the status of the all the containers used in the app</li>
 </ul>
-<pre><code>$ docker-compose ps
+<pre tabindex="0"><code>$ docker-compose ps
 </code></pre><h2 id="other-useful-commands-in-docker-compose">other useful commands in docker-compose</h2>
 <ul>
 <li>to view the logs of the services in the application</li>
 </ul>
-<pre><code>$ docker-compose logs
+<pre tabindex="0"><code>$ docker-compose logs
 </code></pre><ul>
 <li>to pause the application</li>
 </ul>
-<pre><code>$ docker-compose pause
+<pre tabindex="0"><code>$ docker-compose pause
 </code></pre><ul>
 <li>to unpause the application</li>
 </ul>
-<pre><code>$ docker-compose unpause
+<pre tabindex="0"><code>$ docker-compose unpause
 </code></pre><ul>
 <li>to stop the service, this stops all the services container executions</li>
 </ul>
-<pre><code>$ docker-compose stop
+<pre tabindex="0"><code>$ docker-compose stop
 </code></pre><ul>
 <li>to start the services</li>
 </ul>
-<pre><code>$ docker-compose start
+<pre tabindex="0"><code>$ docker-compose start
 </code></pre><ul>
 <li>to down all the services, this terminates that containers and removes the network but not the volumes</li>
 </ul>
-<pre><code>$ docker-compose down
+<pre tabindex="0"><code>$ docker-compose down
 </code></pre><ul>
 <li>to list all the images</li>
 </ul>
-<pre><code>$ docker-compose images
+<pre tabindex="0"><code>$ docker-compose images
 </code></pre>
 </div>
 
@@ -240,7 +240,7 @@ services:
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/compose/">compose</a>
+                <a href="/tags/compose/">compose</a>
             
         </p>
     

@@ -7,7 +7,7 @@
         <meta name="description" content="This page shows some basic commands used in Docker-Machine">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.80.0" />
+        <meta name="generator" content="Hugo 0.101.0" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="docker machine">
@@ -156,7 +156,7 @@
 <p>This section shows some of the useful commands for Docker-machine. &hellip; it is a good practice to do run docker machines from any folder.</p>
 <h2 id="docker-machine-installation">Docker-machine Installation</h2>
 <p>Download the <code>docker-machine</code> from the $base URL, extract and change mode for execution</p>
-<pre><code>$ curl -L $base/docker-machine-$(uname -s)-$(uname -m) &gt; /tmp/docker-machine
+<pre tabindex="0"><code>$ curl -L $base/docker-machine-$(uname -s)-$(uname -m) &gt; /tmp/docker-machine
 
 $ sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
 
@@ -164,26 +164,26 @@ $ chmod +x /usr/local/bin/docker-machine
 </code></pre><p>Test if the tool is installed, try the following <code>$ docker-machine version</code>. To view all the option try <code>$ docker-machine -h</code>.</p>
 <h2 id="docker-machine-usefull-commands">Docker-machine usefull commands</h2>
 <p>To view all the docker-machines in the host machine</p>
-<pre><code>$ docker-machine ls
+<pre tabindex="0"><code>$ docker-machine ls
 </code></pre><p>In order to create a docker-machine, where the machine name is &lsquo;default&rsquo;, try the following</p>
-<pre><code>$ docker-machine create --driver virtualbox default
+<pre tabindex="0"><code>$ docker-machine create --driver virtualbox default
 </code></pre><p>here we have provided the &lsquo;virtualbox&rsquo; driver to be as virtualization.</p>
 <p>To view the environment of the newly created docker-machine</p>
-<pre><code>$ docker-machine env default
+<pre tabindex="0"><code>$ docker-machine env default
 </code></pre><p>To execute the docker commands in the newly created docker-machine is as follows. This maps the default machine</p>
-<pre><code>$ eval $(docker-machine env default)
+<pre tabindex="0"><code>$ eval $(docker-machine env default)
 </code></pre><p>hereafter any docker commands run will be executed in the default docker-machine, the prompt in the terminal will show the name of the docker-machine</p>
 <p>Commands to &lsquo;start&rsquo; or &lsquo;stop&rsquo; the docker-machine eg., default</p>
-<pre><code>$ docker-machine start default
+<pre tabindex="0"><code>$ docker-machine start default
 
 $ docker-machine stop default
 </code></pre><h3 id="docker-commands-issued-to-the-default-machine">docker commands issued to the default machine</h3>
 <p>To find the IP address of the default machine</p>
-<pre><code>$ docker-machine ip default
+<pre tabindex="0"><code>$ docker-machine ip default
 </code></pre><p>To view or browse default machine at port 8080</p>
-<pre><code>$ curl $(docker-machine ip default):8080
+<pre tabindex="0"><code>$ curl $(docker-machine ip default):8080
 </code></pre><p>To unmap the default docker-machine</p>
-<pre><code>$ eval $(docker-machine env -u)
+<pre tabindex="0"><code>$ eval $(docker-machine env -u)
 </code></pre>
 </div>
 
@@ -193,7 +193,7 @@ $ docker-machine stop default
             <span>Tagged:</span>
             
             
-                <a href="/vanblog/tags/machine/">machine</a>
+                <a href="/tags/machine/">machine</a>
             
         </p>
     

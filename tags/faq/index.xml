@@ -13,8 +13,9 @@
       
       <guid>/vanblog/faq/</guid>
       <description>How to fix the miss commits between the two branches in two separate repositories? Steps to be done to fix the miss commits between the two branches say the development branch in origin and upstream remotes.
- Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
- $ git checkout -b commonCommitBranch 2449134b726f723fa  update both the remotes</description>
+Find out the common commit for the two branches in the past and checkout a new branch within the origin remote eg: commonCommitBranch
+$ git checkout -b commonCommitBranch 2449134b726f723fa update both the remotes
+$ git fetch upstream $ git fetch origin now rebase from the upstream branch to the working branch</description>
     </item>
     
   </channel>

@@ -13,7 +13,7 @@
       
       <guid>/vanblog/ssh/</guid>
       <description>ssh-keygen This section shows some of the useful commands for Ssh-keygen.
-how to generate ssh keypair $ ssh-keygen // uses all the default to generate the keypair  to generate with different filename  $ ssh-keygen -f &amp;lt;filename&amp;gt;  to generate with different type of coding, RSA, DSA  $ ssh-keygen -t &amp;lt;code type&amp;gt;  to generate with number of bits  $ ssh-keygen -b 2048  to generate with a comment  $ ssh-keygen -C &amp;lt;comment | email&amp;gt;  to generate key pair with new passpharse (empty string)  $ ssh-keygen -N &amp;quot;&amp;quot;  to generate a key pair in PEM format with comments and save it to a different filename  $ ssh-keygen -m PEM -C &amp;quot;my special vm&amp;quot; -f my_special_vm.</description>
+how to generate ssh keypair $ ssh-keygen // uses all the default to generate the keypair to generate with different filename $ ssh-keygen -f &amp;lt;filename&amp;gt; to generate with different type of coding, RSA, DSA $ ssh-keygen -t &amp;lt;code type&amp;gt; to generate with number of bits $ ssh-keygen -b 2048 to generate with a comment $ ssh-keygen -C &amp;lt;comment | email&amp;gt; to generate key pair with new passpharse (empty string) $ ssh-keygen -N &amp;#34;&amp;#34; to generate a key pair in PEM format with comments and save it to a different filename $ ssh-keygen -m PEM -C &amp;#34;my special vm&amp;#34; -f my_special_vm.</description>
     </item>
     
   </channel>

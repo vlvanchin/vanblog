@@ -13,7 +13,7 @@
       
       <guid>/vanblog/shelltips/</guid>
       <description>Some commands that benifit you How to search text in folder and sub-folders // to search &amp;ldquo;httpclient&amp;rdquo; text in current and subfolders // -r is recursive and -l to list the file along with path.
-$ grep -rl &amp;quot;httpclient&amp;quot; ./ Commands for Vimdiff // to jump to the next/previous difference
+$ grep -rl &amp;#34;httpclient&amp;#34; ./ Commands for Vimdiff // to jump to the next/previous difference
 ]c : - next difference [c : - previous difference // to bringing difference from other file to current file</description>
     </item>
     
